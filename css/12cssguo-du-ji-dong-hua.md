@@ -139,42 +139,13 @@ transition-delay属性用来指定过渡效果在多久之后发生，其单位�
 
 下面，我们将变形和过渡结合起来，实现图片翻转的动画效果。其中，HTML部分：
 
-```
-<
-div class=
-"card-container"
->
-<
-div class=
-"card"
->
-<
-div class=
-"side"
->
-<
-img src=
-"https://img1.doubanio.com/view/photo/photo/public/p2329615548.jpg"
- alt=
-"海拉尔的冬"
->
-<
-/div
->
-<
-div class=
-"side back"
->
-海拉尔的冬
-<
-/div
->
-<
-/div
->
-<
-/div
->
+```php
+<div class="card-container">
+    <div class="card">
+        <div class="side"><img src="https://img1.doubanio.com/view/photo/photo/public/p2329615548.jpg" alt="海拉尔的冬"></div>
+        <div class="side back">海拉尔的冬</div>
+    </div>
+</div>
 ```
 
 CSS部分：
@@ -468,7 +439,4 @@ p class=
 ```
 
 其中fadeInRight、bounceInLeft为animate.css提供的动画效果。
-
-  
-
 
