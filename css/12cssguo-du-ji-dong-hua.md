@@ -152,115 +152,42 @@ transition-delay属性用来指定过渡效果在多久之后发生，其单位�
 
 CSS部分：
 
-```
-.card-container
-{
-cursor
-:
- pointer
-;
-height
-:
- 150px
-;
-perspective
-:
- 200
-;
-position
-:
- relative
-;
-width
-:
- 150px
-;
+```css
+.card-container {
+    cursor: pointer;
+    height: 150px;
+    perspective: 200;
+    position: relative;
+    width: 150px;
 }
-.card
-{
-height
-:
- 100%
-;
-position
-:
- absolute
-;
-transform-style
-:
- preserve-3d
-;
-transition
-:
- all 1s ease-in-out
-;
-width
-:
- 100%
-;
+
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
 }
-.card:hover
-{
-transform
-:
-rotateY
-(
-180deg
-)
-;
+
+.card:hover {
+    transform: rotateY(180deg);
 }
-.side
-{
-backface-visibility
-:
- hidden
-;
-border-radius
-:
- 6px
-;
-height
-:
- 100%
-;
-position
-:
- absolute
-;
-overflow
-:
- hidden
-;
-width
-:
- 100%
-;
+
+.side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
 }
-.back
-{
-background
-:
- #eaeaed
-;
-color
-:
- #0087cc
-;
-line-height
-:
- 150px
-;
-text-align
-:
- center
-;
-transform
-:
-rotateY
-(
-180deg
-)
-;
+
+.back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 150px;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 ```
 
@@ -275,42 +202,19 @@ rotateY
 为了设定动画过程，需要使用@keyframes 指定关键帧，@keyframes 的规则包含动画名称、动画断点以及产生变化的属性。例如：
 
 ```
-@keyframes
- slide
-{
-0%
-{
-left
-:
- 0
-;
-top
-:
- 0
-;
-}
-50%
-{
-left
-:
- 244px
-;
-top
-:
- 100px
-;
-}
-100%
-{
-left
-:
- 488px
-;
-top
-:
- 0
-;
-}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
 }
 ```
 
