@@ -53,3 +53,15 @@ HTML 4.01（微小改进）——1999年12月24日，W3C推荐标准
 
 HTML 5——2014年10月28日，W3C推荐标准
 
+
+
+[XHTML](https://baike.baidu.com/item/XHTML)1.0——发布于2000年1月26日，是W3C推荐[标准](https://baike.baidu.com/item/%E6%A0%87%E5%87%86)，后来经过修订于2002年8月1日重新发布。
+
+[XHTML](https://baike.baidu.com/item/XHTML)1.1，于2001年5月31日发布，[W3C](https://baike.baidu.com/item/W3C)推荐标准。
+
+[XHTML](https://baike.baidu.com/item/XHTML)2.0，W3C工作草案。
+
+[XHTML](https://baike.baidu.com/item/XHTML)5，从XHTML 1.x的更新版，基于[HTML 5](https://baike.baidu.com/item/HTML%205)草案。
+
+[HTML](https://baike.baidu.com/item/HTML)4.01 是常见的版本。
+
