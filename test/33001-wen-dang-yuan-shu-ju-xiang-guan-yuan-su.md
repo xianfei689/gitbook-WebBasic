@@ -4,8 +4,14 @@
 
 `head`元素是`html`元素的第一个子元素，用来标记`HTML`文档的一系列元数据（如文档标题、作者、关键词、相关样式表、相关脚本等等）。
 
-```
-
+```php
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+ </head>
+ <body>
+ ...
 ```
 
 ## title {#title}
@@ -16,15 +22,23 @@
 
 `base`元素位于`head`元素之中，通过`href`属性设定文档基准URL、通过`target`属性设定文档中所有超级链接的默认打开方式。 如：
 
-```
-
+```php
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is an example for the <base> element</title>
+        <base href="http://www.example.com/news/index.html">
+    </head>
+    <body>
+        <p>Visit the <a href="archives.html">archives</a>.</p>
+    </body>
+</html>
 ```
 
 上例中`base`元素`href`的值必须为绝对地址。p元素中的超级链接最终实际地址为：
 
 ```
  "http://www.example.com/news/archives.html"
-
 ```
 
 以下代码将使得网页中超级链接的打开方式设定为新建窗口打开：
