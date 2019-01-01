@@ -67,28 +67,10 @@ CSS支持的媒体类型有：
 
 规则集，也称规则，由选择符和跟随其后的声明块组成。声明块以“{”开始，以“}”结束，其中的声明以“;”分隔。声明由属性名称和属性值组成，属性名称和属性值之间用“:”连接。例如：
 
-```
-h1
-{
-color
-:
- red
-;
-}
-p
-{
-color
-:
- blue
-;
-}
-em em
-{
-font-style
-:
- normal
-;
-}
+```css
+h1 { color: red; }
+p { color: blue; }
+em em { font-style: normal; }
 ```
 
 ## CSS注释 {#css注释}
