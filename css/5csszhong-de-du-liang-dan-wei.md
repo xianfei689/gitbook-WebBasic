@@ -52,7 +52,7 @@ pt与px理解起来其实不难，在应用的时候其实也相当单纯，在�
 
 百分比由数字和紧随其后的“％”符号构成。百分比值始终是相对于另外一个值而言的，比如相对于长度。例如：
 
-```
+```css
 p { font-size: 10px }
 p { line-height: 120% }
 ```
@@ -63,13 +63,9 @@ p { line-height: 120% }
 
 在CSS中，可通过color属性为元素指定字体颜色。在CSS2中，颜色由三种表示方法：颜色名称、十六进制颜色值和rgb函数形式的颜色值。其中颜色名称只能在预设的16种颜色名称中选择，这16种预设的颜色名称分别是：black、silver、gray、white、maroon、red、purple、fuchsia、green、lime、oliver、yellow、navy、blue、teal、aqua。如：
 
-```
-p
-{
-color
-:
- black
-;
+```css
+p {
+    color: black;
 }
 ```
 
@@ -77,13 +73,9 @@ color
 
 color属性的值还可以采用16进制来表示，如：
 
-```
-p
-{
-color
-:
- #333333
-;
+```css
+p {
+    color: #333333;
 }
 ```
 
@@ -91,16 +83,9 @@ color
 
 除了使用颜色名称、十六进制之外，颜色值还可以通过rgb函数表示，如：
 
-```
-p
-{
-color
-:
-rgb
-(
-25%,25%,30%
-)
-;
+```css
+p {
+    color: rgb(25%,25%,30%);
 }
 ```
 
@@ -110,16 +95,9 @@ rgb
 
 RGBA模式与RGB相同，只是在RGB模式上新增了Alpha透明度。如：
 
-```
-p
-{
-color
-:
-rgba
-(
-25%,25%,30%,0.2
-)
-;
+```css
+p {
+    color: rgba(25%,25%,30%,0.2);
 }
 ```
 
@@ -136,16 +114,9 @@ HSL是另外一种常用的颜色表示体系，其中：
 
 例如：
 
-```
-.task
-{
-background
-:
-hsl
-(
-0, 100%, 25%
-)
-;
+```css
+.task {
+  background: hsl(0, 100%, 25%);
 }
 ```
 
