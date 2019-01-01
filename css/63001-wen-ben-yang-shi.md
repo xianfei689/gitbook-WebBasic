@@ -38,7 +38,7 @@ em {
 
 使用样式表的font-weight属性可以灵活地控制字体的粗细，如：
 
-```
+```css
 em {
     font-weight: bold;
 }
@@ -50,7 +50,8 @@ font-weight的只有两种表示方法，一种是从100-900之间的100的倍�
 
 在CSS中，使用font-size属性为字体指定大小，例如：
 
-```
+```css
+
 p {
     font-size: 10px;
 }
@@ -69,7 +70,8 @@ body {
 
 除了能够使用font-family、font-size、line-height、font-weight分别设置字体字型、字体大小、行间距和粗细外，CSS还提供了font属性用以快速设置字体属性。font属性的设定非常灵活，可以是上述几种属性的自由组合，但字体大小的属性值出现在设置字体系列的前面，如果有行间距的话，行间距必须直接出现在字体大小后面，用斜杠连接。如：
 
-```
+```css
+
 p {
     font: bold 16px/1.75 “宋体”;
 }
@@ -77,7 +79,8 @@ p {
 
 上述规则设定段落元素的字体加粗、字体大小为16像素，行间距为28（`16*1.75`）像素，采用宋体字型。再如：
 
-```
+```css
+
 p {
     font: 16px “宋体” ;
 }
@@ -99,7 +102,8 @@ p {
 
 通常情况下，中文字符的字间距不用做额外的调整，但有时由于版面空间有限，需要将较长的标题安排在某个固定的空间内，在不删除字数的情况下，我们可以利用CSS提供的letter-spacing属性来增加或缩小中文字符之间的间距。letter-spacing的值是带单位的数字。如：
 
-```
+```css
+
 h2 {
 letter-spacing: -2px;
 }
@@ -111,7 +115,8 @@ letter-spacing: -2px;
 
 CSS使用text-indent属性来控制文本的首行缩进。text-indent的值必须是有单位的数值，如2em或18px等。如果数值为正，则是首行缩进，如果数值为负，则是悬挂缩进。大多数情况下，新闻的正文内容中的段落都要求首行缩进两个字符，则可以这样设置规则：
 
-```
+```css
+
 p {
     text-indent: 2em;
 }
@@ -125,7 +130,8 @@ CSS中使用text-align来控制文本的对齐方式。text-align的取值可以
 
 CSS还提供了对文本进行简单装饰的属性text-decoration。该属性的只有5个：underline、overline、line-through、blink、none，分别表示下划线、上划线、删除线、闪烁以及取消装饰效果。例如：
 
-```
+```css
+
 a:hover {
     text-decoration: underline;
 }
@@ -135,7 +141,8 @@ a:hover {
 
 除了以上装饰效果外，CSS3还可以通过text-shadow属性为文字添加阴影。在以前，阴影效果一般都是通过图片实现，现在直接使用 text-shadow 属性来实现阴影。这个属性可以有两个作用，产生阴影和模糊主体。这样在不需要图片的情况下就能给文字增加质感。语法如下：
 
-```
+```css
+
 text-shadow:[Color X-Offset Y-Offset Blur],[Color X-Offset Y-Offset Blur]...
 或者
 text-shadow:[X-Offset Y-Offset Blur Color],[X-Offset Y-Offset Blur Color]...
@@ -144,7 +151,8 @@ text-shadow:[X-Offset Y-Offset Blur Color],[X-Offset Y-Offset Blur Color]...
 
 X-Offset表示阴影的水平偏移距离，其值为正值时阴影向右偏移，如果其值为负值时，阴影向左偏移；Y-Offset是指阴影的垂直偏移距离，如果其值是正值时，阴影向下偏移反之其值是负值时阴影向顶部偏移；Blur是指阴影的模糊程度，其值不能是负值，如果值越大，阴影越模糊，反之阴影越清晰，如果不需要阴影模糊可以将Blur值设置为0；Color是指阴影的颜色，其可以使用rgba色。例如：
 
-```
+```css
+
 .demo1 {
    text-shadow: red 0 1px 0;
 }
@@ -152,7 +160,8 @@ X-Offset表示阴影的水平偏移距离，其值为正值时阴影向右偏移
 
 text-shadow可以给一个对象应用一组或多组阴影效果，方式如前面的语法显示一样，用逗号隔开。例如：
 
-```
+```css
+
 .demo1 {
    text-shadow: red 0 1px 0;
 }
