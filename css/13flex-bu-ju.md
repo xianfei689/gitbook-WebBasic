@@ -346,17 +346,9 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 ![](https://yangjh.gitee.io/front-end/images/align-content-space-around.png "CSS flexbox")每根轴线两侧的间隔都相等。
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- stretch
-;
-/* Safari */
-align-content
-:
-         stretch
-;
+.flex-container {
+  -webkit-align-content: stretch; /* Safari */
+  align-content:         stretch;
 }
 ```
 
@@ -371,21 +363,9 @@ align-content
 #### Values: {#values}
 
 ```
-.flex-item
-{
--webkit-order
-:
-<
-integer
->
-;
-/* Safari */
-order
-:
-<
-integer
->
-;
+.flex-item {
+  -webkit-order: <integer>; /* Safari */
+  order:         <integer>;
 }
 ```
 
@@ -398,21 +378,9 @@ integer
 #### Values: {#values}
 
 ```
-.flex-item
-{
--webkit-flex-grow
-:
-<
-number
->
-;
-/* Safari */
-flex-grow
-:
-<
-number
->
-;
+.flex-item {
+  -webkit-flex-grow: <number>; /* Safari */
+  flex-grow:         <number>;
 }
 ```
 
@@ -427,21 +395,9 @@ number
 #### Values: {#values}
 
 ```
-.flex-item
-{
--webkit-flex-shrink
-:
-<
-number
->
-;
-/* Safari */
-flex-shrink
-:
-<
-number
->
-;
+.flex-item {
+  -webkit-flex-shrink: <number>; /* Safari */
+  flex-shrink:         <number>;
 }
 ```
 
@@ -458,23 +414,9 @@ number
 #### Values： {#values：}
 
 ```
-.flex-item
-{
--webkit-flex-basis
-:
- auto | 
-<
-width
->
-;
-/* Safari */
-flex-basis
-:
-         auto | 
-<
-width
->
-;
+.flex-item {
+  -webkit-flex-basis: auto | <width>; /* Safari */
+  flex-basis:         auto | <width>;
 }
 ```
 
@@ -487,39 +429,9 @@ width
 #### Values： {#values：}
 
 ```
-.flex-item
-{
--webkit-flex
-:
- none | auto | [ 
-<
-flex-grow
->
-<
-flex-shrink
->
-? || 
-<
-flex-basis
->
- ]
-;
-/* Safari */
-flex
-:
-         none | auto | [ 
-<
-flex-grow
->
-<
-flex-shrink
->
-? || 
-<
-flex-basis
->
- ]
-;
+.flex-item {
+  -webkit-flex: none | auto | [ <flex-grow> <flex-shrink>? || <flex-basis> ]; /* Safari */
+  flex:         none | auto | [ <flex-grow> <flex-shrink>? || <flex-basis> ];
 }
 ```
 
@@ -530,18 +442,10 @@ flex-basis
 #### Values： {#values：}
 
 ```
-.flex-item
-{
--webkit-align-self
-:
- auto | flex-start | flex-end | center | baseline | stretch
-;
-/* Safari */
-align-self
-:
-         auto | flex-start | flex-end | center | baseline | stretch
-;
-}
+.flex-item {
+  -webkit-align-self: auto | flex-start | flex-end | center | baseline | stretch; /* Safari */
+  align-self:         auto | flex-start | flex-end | center | baseline | stretch;
+}}
 ```
 
 ## 参考信息： {#参考信息：}
