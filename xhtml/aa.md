@@ -16,3 +16,15 @@
 
 基本的文档结构是这样的：
 
+```php
+<!DOCTYPE ...>
+<html>
+<head>
+<title>... </title>
+</head>
+<body> ... </body>
+</html>
+```
+
+
+
