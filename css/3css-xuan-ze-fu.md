@@ -92,10 +92,7 @@ h1#bar      /*将选择具有id="bar"的h1元素*/
 有时URI只需资源内部的某个部分，这种类型的URI的尾部含有数字标记“`#`”,在“`#`”之后是锚点识别符（也叫片段识别符）。例如下例中的section2：
 
 ```
-http
-:
-//example.com/html/top.html#section2
-
+http://example.com/html/top.html#section2
 ```
 
 使用`:target`伪类选择符，就可以对资源内部中片段识别符（如上例中section2）对应的元素设置样式。
@@ -234,7 +231,6 @@ border-bottom
 
 ```
 h1 em
-
 ```
 
 表示选择位于h1元素中的em元素。
@@ -247,7 +243,6 @@ h1 em
 .demo 
 >
  div
-
 ```
 
 表示选择class为demo的元素中的div子元素。
@@ -276,8 +271,8 @@ color
 
 上述例子表示，h1、h2、h3元素的颜色都为红色。群组选择符，能降低CSS样式书写时的重复规则，提高开发效率。
 
-> 166
-> . CSS3将伪对象选择符前面的单个冒号\(:\)修改为双冒号\(::\)
+> 166  
+> . CSS3将伪对象选择符前面的单个冒号\(:\)修改为双冒号\(::\)  
 > [↩](https://yangjh.gitee.io/front-end/css/selector.html#reffn_166)
 
 
