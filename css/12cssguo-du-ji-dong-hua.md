@@ -251,10 +251,10 @@ CSS部分：
 
 动画运行的方向，可以通过nimation-direction属性来指定，其值有normal, reverse, alternate 和 alternate-reverse。
 
-1. **normal**0-&gt;100；
-2. **reverse**100-&gt;0；
-3. **alternate**0-&gt;100-&gt;0；
-4. **alternate-reverse**100-&gt;0-&gt;100；
+1. **normal  **0-&gt;100；
+2. **reverse  **100-&gt;0；
+3. **alternate  **0-&gt;100-&gt;0；
+4. **alternate-reverse  **100-&gt;0-&gt;100；
 
 其中，后两个值，需要和动画重复次数配合使用。
 
