@@ -69,66 +69,19 @@ Video 元素用来插入视频文件。通过src, preload, autoplay, mediagroup,
 
 在HTML5中添加视频和添加音频的方式非常类似。使用video元素，配合src属性，就可以在页面中嵌入视频，其他属性如autoplay、controls、loop以及preload都和audio元素类似。与audio元素不同，vedio元素还可以通过poster属性设定预览图片。例如：
 
-```
-<
-video
-src
-=
-"
-back.ogv
-"
-controls
-poster
-=
-"
-screenshot.jpg
-"
->
-<
-/
-video
->
+```php
+<video src="back.ogv" controls poster="screenshot.jpg"></video>
 ```
 
 .ogv影片格式一个开放标准的视频格式，Firefox、Chrome、Opera支持此格式，但Safari和IE9不支持，支持常用的.mp4视频格式的浏览器有Safari（iPad、Windows、Mac OS）、Chrome、IE9，firefox不支持.mp4格式。
 
 同音频一样，我们可以通过设定不同格式的文件，达到对不同浏览器的兼容：
 
-```
-<
-video
-controls
->
-<
-source
-src
-=
-"
-back.ogv
-"
-type
-=
-"
-video/ogg
-"
->
-<
-source
-src
-=
-"
-back.mp4
-"
-type
-=
-"
-video/mp4
-"
->
-<
-/
-video
->
+```php
+<video controls>
+  <source src="back.ogv" type="video/ogg">
+  <source src="back.mp4" type="video/mp4">
+</video>
 ```
 
 ## audio {#audio}
@@ -137,19 +90,8 @@ Audio 元素用来插入音频文件。音频文件的播放控制通过属性sr
 
 在HTML5之前，在页面中嵌入视音频，绝大多数情况下都需要借助Flash播放器，而HTML5提供了一种快速、简单的添加音频文件的途径，即使用audio元素。和img元素类似，audio元素通过src属性指定文件所在位置，但与img不同的是，audio元素有闭合标签，例如：
 
-```
-<
-audio
-src
-=
-"
-Backroad.ogg
-"
->
-<
-/
-audio
->
+```php
+<audio src="Backroad.ogg"></audio>
 ```
 
 上例的代码将播放当前页面所在目录中的Backroad.ogg音频文件。
