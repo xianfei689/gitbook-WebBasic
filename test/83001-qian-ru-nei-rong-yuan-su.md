@@ -116,19 +116,7 @@ audio元素除了具有src属性外，还有其他几个非常实用的属性，
 audio元素在默认情况下，并不会显示在页面中。如果autoplay属性出现在audio元素中，则当页面载入的时候，就开始播放音频。如果要显示控制器，则需要添加controls属性，如：
 
 ```
-<
-audio
-src
-=
-"
-Backroad.ogg
-"
-controls
->
-<
-/
-audio
->
+<audio src="Backroad.ogg" controls></audio>
 ```
 
 ### 指定多种音频格式 {#指定多种音频格式}
