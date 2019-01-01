@@ -19,4 +19,5 @@
   * [1、使用样式表的三种方式](css/13001-shi-yong-yang-shi-biao-de-san-zhong-fang-shi.md)
   * [2、CSS语法与规则](css/2cssyu-fa-yu-gui-ze.md)
   * [3、CSS 选择符](css/3css-xuan-ze-fu.md)
+  * [4、样式级联](css/43001-yang-shi-ji-lian.md)
 
