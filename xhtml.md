@@ -18,7 +18,7 @@
 
 下面的 HTML 代码仍然可以工作得很好，即使它没有遵守 HTML 规则：
 
-```
+```html
 <html>
 <head>
 <title>This is bad HTML</title>
