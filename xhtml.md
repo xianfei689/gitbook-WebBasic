@@ -1,6 +1,6 @@
 ## XHTML 是什么？
 
-XHTML 指可扩展超文本标签语言（EXtensible HyperText Markup Language）。
+* XHTML 指可扩展超文本标签语言（EXtensible HyperText Markup Language）。
 
 * XHTML 的目标是取代 HTML。
 * XHTML 与 HTML 4.01 几乎是相同的。
