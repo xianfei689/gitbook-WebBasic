@@ -43,8 +43,18 @@ embed元素的src属性用来指定flash所在位置，type属性用来声明嵌
 
 在国内外，有许多视频网站提供免费视频存储及在线播放服务，如优酷、youtube等等，这些网站几乎都提供将其内容嵌入到其它页面的办法，以优酷为例，嵌入其内容的办法如下：
 
-```
-<embed src="http://player.youku.com/player.php/Type/Folder/Fid/27236393/Ob/1/sid/XMTU3MTQ1MjM3Mg==/v.swf" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" allowFullScreen="true" mode="transparent" type="application/x-shockwave-flash"></embed>
+```php
+<embed 
+ src="http://player.youku.com/player.php/Type/Folder/Fid/27236393/Ob/1/sid/XMTU3MTQ1MjM3Mg==/v.swf" 
+ quality="high" 
+ width="480"
+ height="400" 
+ align="middle" 
+ allowScriptAccess="always" 
+ allowFullScreen="true"
+  mode="transparent" 
+  type="application/x-shockwave-flash">
+ </embed>
 ```
 
 究其本质，还是在页面中嵌入flash。
