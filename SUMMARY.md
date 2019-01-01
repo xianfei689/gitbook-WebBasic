@@ -22,4 +22,5 @@
   * [4、样式级联](css/43001-yang-shi-ji-lian.md)
   * [5、CSS中的度量单位](css/5csszhong-de-du-liang-dan-wei.md)
   * [6、文本样式](css/63001-wen-ben-yang-shi.md)
+  * [7、CSS背景属性](css/7cssbei-jing-shu-xing.md)
 
