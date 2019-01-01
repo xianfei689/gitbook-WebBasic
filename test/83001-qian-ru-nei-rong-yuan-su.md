@@ -137,51 +137,12 @@ audio元素在默认情况下，并不会显示在页面中。如果autoplay属�
 
 Source 元素的src属性指定媒体文件的来源。
 
-```
-<
-video
-controls
-autoplay
->
-<
-source
-src
-=
-'
-video.mp4
-'
-type
-=
-'
-video/mp4; codecs=
-"
-avc1.42E01E, mp4a.40.2
-"
-'
->
-<
-source
-src
-=
-'
-video.ogv
-'
-type
-=
-'
-video/ogg; codecs=
-"
-theora, vorbis
-"
-'
->
-
+```php
+<video controls autoplay>
+ <source src='video.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+ <source src='video.ogv' type='video/ogg; codecs="theora, vorbis"'>
  ...
-
-<
-/
-video
->
+</video>
 ```
 
 ## track {#track}
