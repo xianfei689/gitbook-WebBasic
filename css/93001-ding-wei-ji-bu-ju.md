@@ -70,10 +70,6 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 下面，我们为left和right添加浮动属性。float属性有三个值：none（不浮动）、left（左浮动）、right（右浮动），其中none是默认值。盒元素必须为其指定明确的宽度值，才能应用浮动属性。
 
 ```
-#left
-```
-
-```
 #left {
     border:1px #CCC solid;
     width:198px;
