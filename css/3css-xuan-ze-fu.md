@@ -91,7 +91,7 @@ h1#bar      /*将选择具有id="bar"的h1元素*/
 
 有时URI只需资源内部的某个部分，这种类型的URI的尾部含有数字标记“`#`”,在“`#`”之后是锚点识别符（也叫片段识别符）。例如下例中的section2：
 
-```
+```bash
 http://example.com/html/top.html#section2
 ```
 
@@ -101,14 +101,8 @@ http://example.com/html/top.html#section2
 
 语言伪类选择符能对特定lang属性的元素设置样式。如：
 
-```
-html
-:
-lang
-(
-zh
-)
-/*选中lang属性值为zh的html元素*/
+```css
+html:lang(zh) /*选中lang属性值为zh的html元素*/
 ```
 
 #### UI元素伪类选择符 {#ui元素伪类选择符}
