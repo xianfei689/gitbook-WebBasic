@@ -4,7 +4,8 @@
 
 JavaScript的注释和CSS注释类似，分多行和单行，多行注释使用`/* ... */`，如：
 
-```
+```js
+
 /*
 Everything in between is a comment.
 */
@@ -12,7 +13,8 @@ Everything in between is a comment.
 
 单行注释使用“`//`”表示，如：
 
-```
+```js
+
 // This is a comment
 ```
 
@@ -20,7 +22,8 @@ Everything in between is a comment.
 
 所谓变量就是程序中数据的临时存放场所。JavaScript的变量定义都是使用“var”关键字，示例如下：
 
-```
+```js
+
 var author = "yangjh";
 var age = 35;
 var Age = 36;
@@ -42,7 +45,8 @@ var a,b,c;
 
 JavaScript行末可以不加分号，建议能不加分号就不加，那在什么时候需要加分号呢？真正会导致上下行解析出问题的 token 有 5 个：括号，方括号，正则开头的斜杠，加号，减号。实际代码中用正则、加号、减号作为行首的情况几乎没有，所以总结下来就是一句话：**一行开头是括号或者方括号的时候加上分号就可以了，其他时候全部不需要。**例如：
 
-```
+```js
+
 const a = 2;
 [ 3, 4 ].forEach(n => console.log(n))
 a = b;
@@ -57,7 +61,8 @@ a = b;
 
 常量意味着其中保存的值是固定不变的，JavaScript使用关键字const声明常量，习惯上，常量名称使用大写字母。
 
-```
+```js
+
 const A = 7;
 console.log("A is " + A + ".");
 ```
@@ -121,7 +126,8 @@ var txt3 = txt1 + txt2;
 
 语句块用来组织多条语句。用一对花括号界定语句块。语法如下：
 
-```
+```js
+
 {
   statement_1;
   statement_2;
@@ -136,7 +142,8 @@ var txt3 = txt1 + txt2;
 
 break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。
 
-```
+```js
+
 function testBreak(x) {
   var i = 0;
 
@@ -167,7 +174,8 @@ if (condition) {
 
 switch 语句对一个表达式求值，将结果与 case 子语句比较，如果匹配，则从 case 处的语句向下执行。
 
-```
+```js
+
 switch (expression) {
   case value1:
     // 当 expression 的结果与 value1 匹配时，从此处开始执行
@@ -206,7 +214,8 @@ for (var i = 0; i < 9; i++) {
 
 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。语法如下：
 
-```
+```js
+
 while (condition) {
   statement
 }
@@ -216,7 +225,8 @@ while (condition) {
 
 do...while 语句创建了一个循环，该循环执行一个指定的语句直到condition 的值为 false。 condition 在执行statement后才会被赋值，statement至少执行一次。语法如下：
 
-```
+```js
+
 do {
    statement;
    ...
@@ -228,7 +238,8 @@ while (condition);
 
 使用关键字function声明一个函数。函数还可有参数和返回值。
 
-```
+```js
+
 function name([param,[, param,[..., param]]]) {
    [statements]
 }
