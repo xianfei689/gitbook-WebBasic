@@ -270,13 +270,9 @@ CSS部分：
 
 和过渡属性类似，动画属性也可以简写，顺序为animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, 最后为 animation-play-state。例如：
 
-```
-.stage:hover .ball
-{
-animation
-:
- slide 2s linear
-;
+```css
+.stage:hover .ball {
+    animation: slide 2s linear;
 }
 ```
 
@@ -286,29 +282,11 @@ animation
 
 animate.css的用法非常简单，引入样式表后，在需要动画效果的元素起始标签中添加animated和相应动画效果的标签即可。例如：
 
-```
-<
-div
->
-<
-h1 class=
-"animated fadeInRight"
->
-中国制造进入专利维权“反攻期”？
-<
-/h1
->
-<
-p class=
-"animated bounceInLeft"
->
-当中国企业屡屡在“海外专利战”中被“穷追猛打”时，华为却意外打出了“专利反围剿”的关键一枪。
-<
-/p
->
-<
-/div
->
+```php
+<div>
+    <h1 class="animated fadeInRight">中国制造进入专利维权“反攻期”？</h1>
+    <p class="animated bounceInLeft">当中国企业屡屡在“海外专利战”中被“穷追猛打”时，华为却意外打出了“专利反围剿”的关键一枪。</p>
+</div>
 ```
 
 其中fadeInRight、bounceInLeft为animate.css提供的动画效果。
