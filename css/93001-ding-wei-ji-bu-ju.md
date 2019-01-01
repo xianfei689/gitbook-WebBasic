@@ -20,3 +20,48 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 
 先看一段HTML代码：
 
+```php
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>浮动</title>
+<style>
+#head {
+    border:1px #CCC solid;
+    width:410px;
+    height:100px;
+    margin-bottom:10px;
+}
+#main {
+    border:1px #CCC solid;
+    width:400px;
+    height:200px;
+    margin-bottom:10px;
+    padding:5px;
+}
+#left {
+    border:1px #CCC solid;
+    width:198px;
+    height:198px;
+}
+#right {
+    border:1px #CCC solid;
+    width:193px;
+    height:198px;
+    margin-left:5px;
+}
+</style>
+</head>
+<body>
+<div id="head">头部</div>
+<div id="main">
+  <div id="left">左侧</div>
+  <div id="right">右侧</div>
+</div>
+</body>
+</html>
+```
+
+
+
