@@ -24,7 +24,7 @@ At 规则以“@”关键字开始，之后紧跟标志符。比如：“@import
 
 注意：“@import”不能放在语法块中，也不能放在“@charset” 或者“@import”规则之后。例如：
 
-```
+```css
 @import "subs.css";
 h1 { color: blue }
 @import "list.css";
@@ -34,17 +34,10 @@ h1 { color: blue }
 
 除了“@import”之外，常用的@规则还有“@media”，“@media”表示为特定媒体（多个媒体之间可用逗号分隔）声明样式，例如：
 
-```
-@media
- print
-{
-body
-{
-font-size
-:
- 10pt 
-}
-}
+```css
+@media print {
+    body { font-size: 10pt }
+  }
 ```
 
 表示当页面打印时字体为10pt。
