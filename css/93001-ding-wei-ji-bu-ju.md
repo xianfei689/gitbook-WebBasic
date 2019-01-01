@@ -97,7 +97,8 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 <div class="item">
 <div class="img_area">
 <a target="_blank" href="http://zhibo.qq.com/mbask/1844/index.html">
-<img src="http://t3.qlogo.cn/mbloghead/72f0353448bac74e1d86/50" alt="罗崇敏：安全不保 何谈教育" title="罗崇敏：安全不保 何谈教育">
+<img src="http://t3.qlogo.cn/mbloghead/72f0353448bac74e1d86/50" 
+alt="罗崇敏：安全不保 何谈教育" title="罗崇敏：安全不保 何谈教育">
 </a>
 </div>
 <div class="text_area">
