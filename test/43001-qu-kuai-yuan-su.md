@@ -79,89 +79,15 @@ section元素也属于`Sectioning content`类型。
 
 nav元素用来表示一组连接到外部网页的链接，即导航条。
 
-```
-<
-nav
->
-<
-h1
->
-Navigation
-<
-/
-h1
->
-<
-ul
->
-<
-li
->
-<
-a
-href
-=
-"
-articles.html
-"
->
-Index of all articles
-<
-/
-a
->
-<
-/
-li
->
-<
-li
->
-<
-a
-href
-=
-"
-today.html
-"
->
-Things sheeple need to wake up for today
-<
-/
-a
->
-<
-/
-li
->
-<
-li
->
-<
-a
-href
-=
-"
-successes.html
-"
->
-Sheeple we have managed to wake
-<
-/
-a
->
-<
-/
-li
->
-<
-/
-ul
->
-<
-/
-nav
->
+```php
+<nav>
+   <h1>Navigation</h1>
+   <ul>
+    <li><a href="articles.html">Index of all articles</a></li>
+    <li><a href="today.html">Things sheeple need to wake up for today</a></li>
+    <li><a href="successes.html">Sheeple we have managed to wake</a></li>
+   </ul>
+</nav>
 ```
 
 nav元素属于`Sectioning content`类型。
