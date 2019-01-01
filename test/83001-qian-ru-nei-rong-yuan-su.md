@@ -33,33 +33,8 @@ Embed 元素用来嵌入外部非HTML文档内容，比如flash。
 尽管flash内容在移动平台日渐式微，但由于已经创作了大量的flash内容，因此，我们也需要掌握在页面中嵌入flash的方法。可通过embed元素嵌入flash，如下：
 
 ```
-<
-embed
-src
-=
-"
-media/css-change-colors.swf
-"
-type
-=
-"
-application/x-shockwave-flash
-"
-width
-=
-"
-1024
-"
-height
-=
-"
-798
-"
->
-<
-/
-embed
->
+<embed src="media/css-change-colors.swf" type="application/x-shockwave-flash" width="1024" height="798">
+ </embed>
 ```
 
 embed元素的src属性用来指定flash所在位置，type属性用来声明嵌入的内容为flash，witdh为宽度，height为高度。
@@ -516,7 +491,7 @@ HREF
 "
 >
  |
-   
+
 <
 A
 HREF
@@ -549,7 +524,7 @@ HREF
 "
 >
  |
-   
+
 <
 A
 HREF
@@ -582,7 +557,7 @@ HREF
 "
 >
  |
-   
+
 <
 A
 HREF
