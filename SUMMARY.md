@@ -7,6 +7,7 @@
   * [3、文档元数据相关元素](test/33001-wen-dang-yuan-shu-ju-xiang-guan-yuan-su.md)
   * [4、区块元素](test/43001-qu-kuai-yuan-su.md)
   * [5、内容组织元素](test/53001-nei-rong-zu-zhi-yuan-su.md)
+  * [6、文本语义元素](test/63001-wen-ben-yu-yi-yuan-su.md)
 * [XHTML](xhtml.md)
   * [XHTML DTD](xhtml/aa.md)
 
