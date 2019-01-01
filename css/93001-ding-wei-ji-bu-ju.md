@@ -124,5 +124,131 @@ alt="王旭明：如何避免校车惨剧一再发生" title="王旭明：如何
 </div>
 ```
 
+在这个例子中，图片和文字分别作为内容放在div元素中，这两个div容器为“img\_area”和“text\_area”， “img\_area”和“text\_area”是div容器的类名称（使用了class属性），这两个div元素又是类名为item的容器的内容，类名为item的div元素可以重复使用，如上例中，就有两个类名为item的div元素。如果不使用浮动，文字没有办法完美环绕在图片周围，将图片放入类名为img\_area的div元素中，并把文字放在类名为text\_area的div元素中，使用如下样式，即可达到效果：
+
+```css
+.img_area {
+    float: left;
+    padding: 3px 10px 0 0;
+    width: auto;
+}
+.text_area {
+    line-height: 20px;
+}
+.item {
+    padding: 0 5px 5px;
+    text-align: left;
+}
+```
+
+其中花括弧外面的“.img\_area”为选择符，.img\_area表示该选择符为类选择符，对应HTML中class为img\_area的元素，“float：left”表示选择符对应的元素将左浮动，“padding: 3px 10px 0 0;”语句声明选择符对应元素上右下左的内边距分别为3像素、10像素、0和0，最后width表示该元素的宽度将根据所包含内容的大小计算而来。另外两个CSS规则用来设定文字区域的行间距和整体的内边距、对齐方式。
+
+在这个例子中，我们看到了浮动的特点，首先，类名为img\_area的div元素声明了左浮动的规则，这样，这个div元素就改变了它默认的块元素显示方式，而是尽可能得向父元素（类名为item的div元素）的左上角靠齐，并且，它右侧的空间将会被后续的元素所填充，因此，尽管类名为text\_area的div元素没有声明浮动，但它还是占据了类名为img\_area元素的右侧空间。这样，我们就达到了图文混编的效果。
+
+### 清除浮动 {#清除浮动}
+
+从上面的例子中，我们清楚地看到，使用了浮动属性的元素将会影响到其后的内容。这种影响有时候是我们期望的，有时候是我们所不乐见的。如下图所示：
+
+![](https://yangjh.gitee.io/front-end/images/beforeclear.jpg "清除浮动前")
+
+图中的HTML及CSS如下：
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>浮动清除实例</title>
+<style type="text/css">
+body {
+    font-size:14px;
+    text-align:center;
+}
+.item {
+    height:115px;
+    width:500px;
+    border:1px #ccc solid;
+    padding:10px;
+    margin:20px;
+}
+.float_area {
+    border:1px #ccc solid;
+    width:100px;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.normal_area {
+    border:1px #ccc solid;
+    width:210px;
+}
+.float_area,.normal_area {
+    height:50px;
+    line-height:50px;
+}
+</style>
+</head>
+<body>
+<div class="item">
+  <div class="float_area">左浮动模块</div>
+  <div class="float_area">左浮动模块</div>
+  <div class="normal_area">希望按正常流显示的模块</div>
+</div>
+</body>
+</html>
+```
+
+在上面的代码中，类名为float\_area的div元素使用了左浮动，但是我们不希望类名为normal\_area的div元素正常显示，也就是另起一行显示时，我们就必须使用clear属性来清除浮动，如下图所示。
+
+clear的值有left、right、both和none，其中left表示清除左浮动，right表示清除右浮动，both表示清除左、右两侧的浮动影响，而none表示不清除浮动。
+
+![](https://yangjh.gitee.io/front-end/images/clear.jpg "清除浮动")
+
+上图中的HTML和CSS如下：
+
+```php
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>浮动清除实例</title>
+<style type="text/css">
+body {
+    font-size:14px;
+    text-align:center;
+}
+.item {
+    height:115px;
+    width:500px;
+    border:1px #ccc solid;
+    padding:10px;
+    margin:20px;
+}
+.float_area {
+    border:1px #ccc solid;
+    width:100px;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.normal_area {
+    border:1px #ccc solid;
+    width:210px;
+    clear:both;
+}
+.float_area,.normal_area {
+    height:50px;
+    line-height:50px;
+}
+</style>
+</head>
+<body>
+<div class="item">
+  <div class="float_area">左浮动模块</div>
+  <div class="float_area">左浮动模块</div>
+  <div class="normal_area">希望按正常流显示的模块</div>
+</div>
+</body>
+</html>
+```
+
 
 
