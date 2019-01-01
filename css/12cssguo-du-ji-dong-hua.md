@@ -234,25 +234,12 @@ CSS部分：
 
 和过渡属性类似，动画属性也有持续时间（animation-duration）、缓动效果（animation-timing-function）及延迟属性（animation-delay）。例如：
 
-```
-.stage:hover .ball
-{
-animation-name
-:
- slide
-;
-animation-duration
-:
- 2s
-;
-animation-timing-function
-:
- ease-in-out
-;
-animation-delay
-:
- .5s
-;
+```css
+.stage:hover .ball {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
 }
 ```
 
