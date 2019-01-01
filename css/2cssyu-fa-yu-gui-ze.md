@@ -25,18 +25,9 @@ At 规则以“@”关键字开始，之后紧跟标志符。比如：“@import
 注意：“@import”不能放在语法块中，也不能放在“@charset” 或者“@import”规则之后。例如：
 
 ```
-@import
-"subs.css"
-;
-h1
-{
-color
-:
- blue 
-}
-@import
-"list.css"
-;
+@import "subs.css";
+h1 { color: blue }
+@import "list.css";
 ```
 
 上述代码中最后的@import语句将被忽略。
