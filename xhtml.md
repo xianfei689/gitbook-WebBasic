@@ -96,7 +96,7 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 
 这是正确的：
 
-```
+```php
 <input checked="checked" />
 <input readonly="readonly" />
 <input disabled="disabled" />
