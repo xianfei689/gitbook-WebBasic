@@ -40,7 +40,6 @@
 margin属性的值可以是带单位的长度、百分比和auto。设置外边距的方式如下：
 
 ```css
-
 div {
     margin: 10px;
 }
@@ -49,7 +48,6 @@ div {
 上述规则表示div元素四侧的外边距为10个像素。
 
 ```css
-
 div {
     margin: 10px 20px;
 }
@@ -58,7 +56,6 @@ div {
 上述规则表示div元素上下侧的外边距为10个像素，左右侧的外边距为20像素。
 
 ```css
-
 div {
     margin: 10px 20px 5px;
 }
@@ -67,7 +64,6 @@ div {
 上述规则表示div元素上侧的外边距为10像素，左右两侧的外边距为20像素，下侧的外边距为5像素。
 
 ```css
-
 div {
     margin: 10px 20px 0 5px;
 }
@@ -80,7 +76,6 @@ div {
 需要特别说明的是，当元素左右两侧的外边距取值auto时，这个元素就会在所在容器中居中。如：
 
 ```css
-
 div {
     margin: 0 auto;
 }
@@ -95,7 +90,6 @@ CSS中使用padding表示内边距，内边距和外边距在很多方面是相�
 边框是进行信息组织是的一种有效手段，通过边框的使用，能够区分不同类型的信息，而且边框还是一种装饰手段，能在组织信息的同时美化页面。CSS提供了border-style、border-width和border-color以及border元素来控制边框的样式、宽度以及颜色。如：
 
 ```css
-
 #footer {
     border-style: dashed;
     border-width: 1px;
@@ -113,7 +107,7 @@ border-color属性用来指定边框颜色，其值可以为文本、16进制颜
 
 CSS还提供了快速设定边框样式的属性——border，如上述的样式可以这样简写：
 
-```
+```css
 #footer {
     border: dashed 1px #ccc;
 }
@@ -121,7 +115,7 @@ CSS还提供了快速设定边框样式的属性——border，如上述的样�
 
 border的值中必须要指定的是border-style，其他两个可以任意组合，并且对出现的先后顺序也无要求。和margin、padding属性类似，border-style、border-width以及border-color可以接受1-4个值，用以分别指定不同侧面的边框样式，如下面的样式规则使得id为footer的元素上下两侧没有边框，左右两侧的边框样式为虚线、宽度为medium、颜色和该元素的内容颜色一致：
 
-```
+```css
 #footer {
     border-style: none dashed;
 }
@@ -130,7 +124,6 @@ border的值中必须要指定的是border-style，其他两个可以任意组�
 最后，CSS也提供了分别指定不同方向上边框的机制：border-top、border-right、border-bottom以及border-left。如下面的样式规则将使得id为footer的元素拥有1个像素宽的红色虚线上边框：
 
 ```css
-
 #footer {
     border-top: dashed 1px red;
 }
@@ -143,7 +136,6 @@ border-radius属性，允许我们为元素设置圆角效果。
 border-radius属性接受长度单位，包括百分比和像素。border-radius如果只有一个值，则设定四个角，俩值、三个值和四个值的情况与margin、padding类似，都按顺时针方向设定。例如：
 
 ```css
-
 .border-football {
   border-radius: 15px 75px;
 }
