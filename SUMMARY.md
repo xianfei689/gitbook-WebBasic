@@ -30,4 +30,5 @@
   * [12、CSS过渡及动画](css/12cssguo-du-ji-dong-hua.md)
   * [13、Flex 布局](css/13flex-bu-ju.md)
 * [JavaScript](javascript.md)
+  * [1、js使用方式](javascript/1jsshi-yong.md)
 
