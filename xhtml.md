@@ -78,7 +78,7 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 
 这是正确的：
 
-```
+```php
 <table width="100%">
 ```
 
@@ -87,21 +87,11 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 这是错误的：
 
 ```
-<
-input checked
->
-<
-input readonly
->
-<
-input disabled
->
-<
-option selected
->
-<
-frame noresize
->
+<input checked>
+<input readonly>
+<input disabled>
+<option selected>
+<frame noresize>
 ```
 
 这是正确的：
