@@ -86,7 +86,7 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 
 这是错误的：
 
-```
+```php
 <input checked>
 <input readonly>
 <input disabled>
@@ -97,20 +97,11 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 这是正确的：
 
 ```
-<
-input checked="checked" /
->
-<
-input readonly="readonly" /
->
-<
-input disabled="disabled" /
->
-<
-option selected="selected" /
->
-<
-frame noresize="noresize" /
+<input checked="checked" />
+<input readonly="readonly" />
+<input disabled="disabled" />
+<option selected="selected" />
+<frame noresize="noresize" />
 >
 ```
 
