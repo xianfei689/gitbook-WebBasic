@@ -109,7 +109,20 @@
 `style`元素是`head`元素的子元素，用来设定HTML文档的内部样式表。
 
 ```
-
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>My favorite book</title>
+  <style>
+   body { color: black; background: white; }
+  </style>
+ </head>
+ <body>
+  <p>My <em>favorite</em> book of all time has <em>got</em> to be
+  <cite>A Cat's Life</cite>. It is a book by P. Rahmel that talks
+  about the <i lang="la">Felis Catus</i> in modern human society.</p>
+ </body>
+</html>
 ```
 
 
