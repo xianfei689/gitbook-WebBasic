@@ -141,7 +141,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 设置自动换行，且第一行在上方。
 
-```
+```css
 .flex-container {
   -webkit-flex-wrap: wrap-reverse; /* Safari */
   flex-wrap:         wrap-reverse;
@@ -158,47 +158,19 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### **Values:** {#values}
 
-```
-.flex-container
-{
--webkit-flex-flow
-:
-<
-flex-direction
->
- || 
-<
-flex-wrap
->
-;
-/* Safari */
-flex-flow
-:
-<
-flex-direction
->
- || 
-<
-flex-wrap
->
-;
+```css
+.flex-container {
+  -webkit-flex-flow: <flex-direction> || <flex-wrap>; /* Safari */
+  flex-flow:         <flex-direction> || <flex-wrap>;
 }
 ```
 
 默认属性值：
 
-```
-.flex-container
-{
--webkit-flex-flow
-:
- row nowrap
-;
-/* Safari */
-flex-flow
-:
-         row nowrap
-;
+```css
+.flex-container {
+  -webkit-flex-flow: row nowrap; /* Safari */
+  flex-flow:         row nowrap;
 }
 ```
 
@@ -206,98 +178,54 @@ flex-flow
 
 `justify-content`属性定义项目在主轴上的对齐方式。
 
-```
-.flex-container
-{
-justify-content
-:
- flex-start | flex-end | center | space-between | space-around
-;
+```css
+.flex-container {
+  justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 ```
 
 #### Values: {#values}
 
-```
-.flex-container
-{
--webkit-justify-content
-:
- flex-start
-;
-/* Safari */
-justify-content
-:
-         flex-start
-;
+```css
+.flex-container {
+  -webkit-justify-content: flex-start; /* Safari */
+  justify-content:         flex-start;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-flex-start.png "CSS flexbox")左对齐。
 
 ```
-.flex-container
-{
--webkit-justify-content
-:
- flex-end
-;
-/* Safari */
-justify-content
-:
-         flex-end
-;
+.flex-container {
+  -webkit-justify-content: flex-end; /* Safari */
+  justify-content:         flex-end;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-flex-end.png "CSS flexbox")右对齐。
 
 ```
-.flex-container
-{
--webkit-justify-content
-:
- center
-;
-/* Safari */
-justify-content
-:
-         center
-;
+.flex-container {
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-center.png "CSS flexbox")居中。
 
 ```
-.flex-container
-{
--webkit-justify-content
-:
- space-between
-;
-/* Safari */
-justify-content
-:
-         space-between
-;
+.flex-container {
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-space-between.png "CSS flexbox")两端对齐，项目之间的间隔相等。
 
 ```
-.flex-container
-{
--webkit-justify-content
-:
- space-around
-;
-/* Safari */
-justify-content
-:
-         space-around
-;
+.flex-container {
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
 }
 ```
 
@@ -308,99 +236,53 @@ justify-content
 `align-items`属性定义项目在交叉轴上的对齐方式。
 
 ```
-.flex-container
-{
-align-items
-:
-align-items
-:
- flex-start | flex-end | center | baseline | stretch
-;
+.flex-container {
+  align-items: align-items: flex-start | flex-end | center | baseline | stretch;
 }
 ```
 
 #### Values: {#values}
 
 ```
-.flex-container
-{
--webkit-align-items
-:
- flex-start
-;
-/* Safari */
-align-items
-:
-         flex-start
-;
+.flex-container {
+  -webkit-align-items: flex-start; /* Safari */
+  align-items:         flex-start;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-flex-start.png "CSS flexbox")交叉轴的起点对齐。
 
 ```
-.flex-container
-{
--webkit-align-items
-:
- flex-end
-;
-/* Safari */
-align-items
-:
-         flex-end
-;
+.flex-container {
+  -webkit-align-items: flex-end; /* Safari */
+  align-items:         flex-end;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-flex-end.png "CSS flexbox")交叉轴的终点对齐。
 
 ```
-.flex-container
-{
--webkit-align-items
-:
- center
-;
-/* Safari */
-align-items
-:
-         center
-;
+.flex-container {
+  -webkit-align-items: center; /* Safari */
+  align-items:         center;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-center.png "CSS flexbox")交叉轴的中点对齐。
 
 ```
-.flex-container
-{
--webkit-align-items
-:
- baseline
-;
-/* Safari */
-align-items
-:
-         baseline
-;
+.flex-container {
+  -webkit-align-items: baseline; /* Safari */
+  align-items:         baseline;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-baseline.png "CSS flexbox")项目的第一行文字的基线对齐。
 
 ```
-.flex-container
-{
--webkit-align-items
-:
- stretch
-;
-/* Safari */
-align-items
-:
-         stretch
-;
+.flex-container {
+  -webkit-align-items: stretch; /* Safari */
+  align-items:         stretch;
 }
 ```
 
@@ -411,12 +293,8 @@ align-items
 `align-content`定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
 
 ```
-.flex-container
-{
-align-content
-:
- flex-start | flex-end | center | space-between | space-around | stretch
-;
+.flex-container {
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 ```
 
