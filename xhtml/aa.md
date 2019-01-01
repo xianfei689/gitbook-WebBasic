@@ -6,7 +6,13 @@
 
 **使用最普遍的是 XHTML Transitional。**
 
+## &lt;!DOCTYPE&gt; 是强制使用的。
 
+一个 XHTML 文档有三个主要的部分：
+
+* DOCTYPE
+* Head
+* Body
 
 
 
