@@ -151,15 +151,8 @@ lang 属性应用于几乎所有的 XHTML 元素。它定义元素内部的内�
 
 如果在某元素中使用 lang 属性，就必须添加额外的 xml:lang，像这样：
 
-```
-<
-div 
-lang="no" xml:lang="no"
->
-Heia Norge!
-<
-/div
->
+```php
+<div lang="no" xml:lang="no">Heia Norge!</div>
 ```
 
 ## 强制使用的 XHTML 元素
