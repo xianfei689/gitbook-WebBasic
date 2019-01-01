@@ -31,4 +31,5 @@
   * [13、Flex 布局](css/13flex-bu-ju.md)
 * [JavaScript](javascript.md)
   * [1、js使用方式](javascript/1jsshi-yong.md)
+  * [2、核心语法](javascript/23001-he-xin-yu-fa.md)
 
