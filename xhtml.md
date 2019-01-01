@@ -12,9 +12,20 @@
 
 * XHTML 是一个 W3C 标准。
 
-
-
 ## 为什么要使用XHTML？
+
+我们认为万维网上的许多页面都包含着糟糕的 HTML 代码。
+
+下面的 HTML 代码仍然可以工作得很好，即使它没有遵守 HTML 规则：
+
+```
+<html>
+<head>
+<title>This is bad HTML</title>
+<body>
+<h1>Bad HTML
+</body>
+```
 
 
 
