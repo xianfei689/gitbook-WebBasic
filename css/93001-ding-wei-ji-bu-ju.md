@@ -63,5 +63,37 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 </html>
 ```
 
+这段代码的显示效果如下：
 
+![](https://yangjh.gitee.io/front-end/images/beforefloat.jpg "浮动前")
+
+下面，我们为left和right添加浮动属性。float属性有三个值：none（不浮动）、left（左浮动）、right（右浮动），其中none是默认值。盒元素必须为其指定明确的宽度值，才能应用浮动属性。
+
+```
+#left
+```
+
+```
+#left {
+    border:1px #CCC solid;
+    width:198px;
+    height:98px;
+    float:left;
+}
+#right {
+    border:1px #CCC solid;
+    width:193px;
+    height:98px;
+    margin-left:5px;
+    float:left;
+}
+```
+
+显示效果如下：
+
+![](https://yangjh.gitee.io/front-end/images/float.jpg "浮动")
+
+我们看到id为right的div元素现在和id为left的div元素在同一水平位置上显示，并非另起一行。浮动的方向是针对使用了浮动元素的位置而言的，并不应用于其后的元素。另外一定要注意，如果一个元素没有宽度大小，则不能指定浮动效果。
+
+常见的图文混排效果，就是通过浮动来实现。
 
