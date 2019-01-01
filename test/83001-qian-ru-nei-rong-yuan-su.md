@@ -115,7 +115,7 @@ audio元素除了具有src属性外，还有其他几个非常实用的属性，
 
 audio元素在默认情况下，并不会显示在页面中。如果autoplay属性出现在audio元素中，则当页面载入的时候，就开始播放音频。如果要显示控制器，则需要添加controls属性，如：
 
-```
+```php
 <audio src="Backroad.ogg" controls></audio>
 ```
 
@@ -123,54 +123,12 @@ audio元素在默认情况下，并不会显示在页面中。如果autoplay属�
 
 不同浏览器对音频格式的支持是不一致的，绝大多数浏览器都支持常见的音频格式，如.mp3、.wav以及.ogg。HTML5中可以使用source元素，指定多种格式，浏览器会依次判断并读取其支持的格式，例如：
 
-```
-<
-audio
-controls
->
-<
-source
-src
-=
-"
-Backroad.ogg
-"
-type
-=
-"
-audio/ogg
-"
->
-<
-source
-src
-=
-"
-Backroad.mp3
-"
-type
-=
-"
-audio/mpeg
-"
->
-<
-source
-src
-=
-"
-Backroad.wav
-"
-type
-=
-"
-audio/wav
-"
->
-<
-/
-audio
->
+```php
+<audio controls>
+  <source src="Backroad.ogg" type="audio/ogg">
+  <source src="Backroad.mp3" type="audio/mpeg">
+  <source src="Backroad.wav" type="audio/wav">
+</audio>
 ```
 
 苹果公司的Safari浏览器不支持ogg格式，但支持MP3格式，因此，我们为同一个音频提供ogg和mp3格式，基本上就能确保大多数情况下音频文件的播放。
