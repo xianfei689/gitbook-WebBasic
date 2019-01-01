@@ -72,11 +72,8 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 
 这是错误的：
 
-```
-<
-table width=
-100%
->
+```php
+<table width=100%>
 ```
 
 这是正确的：
@@ -234,5 +231,5 @@ body
 
 提示：文件类型声明并非 XHTML 文档自身的组成部分。它并不是 XHTML 元素，也没有关闭标签。
 
-提示：在 XHTML 中，&lt;html&gt; 标签内的 xmlns 属性是必需的。然而，即使当 XHTML 文档中没有这个属性时，w3.org 的验证工具也不会提示错误。这是因为，"xmlns=http://www.w3.org/1999/xhtml" 是一个固定的值，即使你没有把它包含在代码中，这个值也会被添加到 &lt;html&gt; 标签中。
+提示：在 XHTML 中，&lt;html&gt; 标签内的 xmlns 属性是必需的。然而，即使当 XHTML 文档中没有这个属性时，w3.org 的验证工具也不会提示错误。这是因为，"xmlns=[http://www.w3.org/1999/xhtml](http://www.w3.org/1999/xhtml)" 是一个固定的值，即使你没有把它包含在代码中，这个值也会被添加到 &lt;html&gt; 标签中。
 
