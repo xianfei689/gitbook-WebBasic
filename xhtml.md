@@ -161,35 +161,17 @@ lang 属性应用于几乎所有的 XHTML 元素。它定义元素内部的内�
 
 下面是一个最小化的 XHTML 文件模板：
 
-```
-<
-!DOCTYPE Doctype goes here
->
-<
-html xmlns="http://www.w3.org/1999/xhtml"
->
-<
-head
->
-<
-title
->
-Title goes here
-<
-/title
->
-<
-/head
->
-<
-body
->
-<
-/body
->
-<
-/html
->
+```php
+<!DOCTYPE Doctype goes here>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Title goes here</title>
+</head>
+
+<body>
+</body>
+
+</html>
 ```
 
 提示：文件类型声明并非 XHTML 文档自身的组成部分。它并不是 XHTML 元素，也没有关闭标签。
