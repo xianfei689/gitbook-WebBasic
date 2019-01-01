@@ -27,7 +27,6 @@ body {
 斜体常常用来表示引述、人名、外语单词等内容的表示。斜体效果使用font-style属性来控制，font-style有3个值：italic、oblique、normal，分别表示使用字体的倾斜版本来显示字体、使用计算机动态倾斜文字以及按正常字体显示。如：
 
 ```css
-
 em {
     font-style: italic;
 }
