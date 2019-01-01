@@ -86,7 +86,7 @@ Translate有点像相对定位，能够将元素在不脱离正常文档信息�
 
 CSS的变形值，还可以组合使用，比如既有旋转，还有缩放等等。多个变形值之间用空格隔开即可。例如：
 
-```
+```css
 transform: rotate(25deg) scale(.75);
 ```
 
@@ -104,7 +104,7 @@ transform-origin的值和背景图片的设置类似。
 
 Perspective属性指定了观察者与z=0平面的距离，使具有三维位置变换的元素产生透视效果。z&gt;0的三维元素比正常大，而z&lt;0时则比正常小，大小程度由该属性的值决定。当值为0或负值时，无透视变换。例如：
 
-```
+```css
 .box-10 {
     transform: perspective(100px) rotateX(15deg);
 }
@@ -138,11 +138,8 @@ transform-style属性决定变形是在二维还是三维空间中进行，有�
 
 进行三维变形后，元素背部的内容，有时需要设定可见性，默认情况下，元素背部的值是可见的。，如果要隐藏，则需要：
 
-```
-backface-visibility
-:
- hidden
-;
+```css
+backface-visibility: hidden;
 ```
 
 
