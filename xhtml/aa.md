@@ -44,5 +44,5 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </html>
 ```
 
-
+文档类型声明定义文档的类型：
 
