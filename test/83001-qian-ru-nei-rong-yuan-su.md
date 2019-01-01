@@ -149,258 +149,32 @@ Source 元素的src属性指定媒体文件的来源。
 
 Track 元素为媒体文件提供基于时间线的文本信息，如不同语言的字幕。
 
-```
-<
-video
-src
-=
-"
-brave.webm
-"
->
-<
-track
-kind
-=
-subtitles
-src
-=
-brave.en.vtt
-srclang
-=
-en
-label
-=
-"
-English
-"
->
-<
-track
-kind
-=
-captions
-src
-=
-brave.en.hoh.vtt
-srclang
-=
-en
-label
-=
-"
-English for the Hard of Hearing
-"
->
-<
-track
-kind
-=
-subtitles
-src
-=
-brave.fr.vtt
-srclang
-=
-fr
-lang
-=
-fr
-label
-=
-"
-Français
-"
->
-<
-track
-kind
-=
-subtitles
-src
-=
-brave.de.vtt
-srclang
-=
-de
-lang
-=
-de
-label
-=
-"
-Deutsch
-"
->
-<
-/
-video
->
+```php
+<video src="brave.webm">
+ <track kind=subtitles src=brave.en.vtt srclang=en label="English">
+ <track kind=captions src=brave.en.hoh.vtt srclang=en label="English for the Hard of Hearing">
+ <track kind=subtitles src=brave.fr.vtt srclang=fr lang=fr label="Français">
+ <track kind=subtitles src=brave.de.vtt srclang=de lang=de label="Deutsch">
+</video>
 ```
 
 ## map {#map}
 
 Map 元素将图片和区域组合起来形成地图。
 
-```
-<
-IMG
-SRC
-=
-"
-/images/menu.gif
-"
-USEMAP
-=
-"
-#NAV
-"
->
-<
-MAP
-NAME
-=
-"
-NAV
-"
->
-<
-P
->
-<
-A
-HREF
-=
-"
-/clothes/
-"
->
-Clothes
-<
-/
-A
->
-<
-AREA
-ALT
-=
-"
-Clothes
-"
-COORDS
-=
-"
-0,0,100,50
-"
-HREF
-=
-"
-/clothes/
-"
->
- |
-
-<
-A
-HREF
-=
-"
-/toys/
-"
->
-Toys
-<
-/
-A
->
-<
-AREA
-ALT
-=
-"
-Toys
-"
-COORDS
-=
-"
-0,0,100,50
-"
-HREF
-=
-"
-/toys/
-"
->
- |
-
-<
-A
-HREF
-=
-"
-/food/
-"
->
-Food
-<
-/
-A
->
-<
-AREA
-ALT
-=
-"
-Food
-"
-COORDS
-=
-"
-0,0,100,50
-"
-HREF
-=
-"
-/food/
-"
->
- |
-
-<
-A
-HREF
-=
-"
-/books/
-"
->
-Books
-<
-/
-A
->
-<
-AREA
-ALT
-=
-"
-Books
-"
-COORDS
-=
-"
-0,0,100,50
-"
-HREF
-=
-"
-/books/
-"
->
-<
-/
-MAP
->
+```php
+<IMG SRC="/images/menu.gif" USEMAP="#NAV">
+<MAP NAME="NAV">
+  <P>
+   <A HREF="/clothes/">Clothes</A>
+   <AREA ALT="Clothes" COORDS="0,0,100,50" HREF="/clothes/"> |
+   <A HREF="/toys/">Toys</A>
+   <AREA ALT="Toys" COORDS="0,0,100,50" HREF="/toys/"> |
+   <A HREF="/food/">Food</A>
+   <AREA ALT="Food" COORDS="0,0,100,50" HREF="/food/"> |
+   <A HREF="/books/">Books</A>
+   <AREA ALT="Books" COORDS="0,0,100,50" HREF="/books/">
+</MAP>
 ```
 
 ## area {#area}
