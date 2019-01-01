@@ -242,7 +242,7 @@ function name([param,[, param,[..., param]]]) {
 
 在JavaScript中，回调函数具体的定义为：函数A作为参数\(函数引用\)传递到另一个函数B中，并且这个函数B执行函数A。我们就说函数A叫做回调函数。如果没有名称\(函数表达式\)，就叫做匿名回调函数。例如：
 
-```
+```js
 // 当参数a大于10且参数func2是一个方法时 执行func2
 function func1(a, func2) {
     if (a > 10 && typeof func2 == 'function') {
