@@ -54,7 +54,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 文档的其余部分类似 HTML：
 
-```
+```php
 <html>
 <head>
 <title>simple document</title>
