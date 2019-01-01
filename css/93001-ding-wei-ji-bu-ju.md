@@ -298,6 +298,346 @@ position属性用来设定对象的定位方式。它的值有：
 
 其中relative和absolute方式使用较多，它们的区别可从下面的例子中看出：
 
-  
+```php
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>相对定位与绝对定位</title>
+    <style type="text/css">
+      body {
+        width:960px;
+        margin: 0 auto;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        line-height: 1.8em;
+      }
+      div {
+        width: 300px;
+        float: left;
+      }
+      .relative {
+        position: relative;
+        top:150px;
+      }
+      .absolute {
+        position: absolute;
+        top:150px;
+      }
+      .bg {
+        background-color: #fcc;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>正常信息流</h2>
+      <p>孩子，你真是快活啊，一早晨坐在泥土里，耍着折下来的小树枝。</p>
+      <p>我微笑着看你在那里耍着那根折下来的小树枝。</p>
+      <p class="bg">我正忙着算账，一小时一小时在那里加叠数字。</p>
+      <p>也许你在看我，想到：“这种好没趣的游戏，竟把你的一早晨的好时间浪费掉了!"</p>
+      <p>孩子，我忘了聚精会神玩耍树枝与泥饼的方法了。</p>
+    </div>
+    <div>
+      <h2>相对定位</h2>
+      <p>孩子，你真是快活啊，一早晨坐在泥土里，耍着折下来的小树枝。</p>
+      <p>我微笑着看你在那里耍着那根折下来的小树枝。</p>
+      <p class="bg relative">我正忙着算账，一小时一小时在那里加叠数字。</p>
+      <p>也许你在看我，想到：“这种好没趣的游戏，竟把你的一早晨的好时间浪费掉了!"</p>
+      <p>孩子，我忘了聚精会神玩耍树枝与泥饼的方法了。</p>
+      <code>.relative { position: relative; top:150px;}</code>
+    </div>
+    <div>
+      <h2>绝对定位</h2>
+      <p>孩子，你真是快活啊，一早晨坐在泥土里，耍着折下来的小树枝。</p>
+      <p>我微笑着看你在那里耍着那根折下来的小树枝。</p>
+      <p class="bg absolute">我正忙着算账，一小时一小时在那里加叠数字。</p>
+      <p>也许你在看我，想到：“这种好没趣的游戏，竟把你的一早晨的好时间浪费掉了!"</p>
+      <p>孩子，我忘了聚精会神玩耍树枝与泥饼的方法了。</p>
+      <code>.absolute {
+        position: absolute;
+        top:150px;}
+      </code>
+    </div>
+  </body>
+</html>
+```
+
+上例的运行结果如下图所示：
+
+![](https://yangjh.gitee.io/front-end/images/position.png "不同定位方式的区别")
+
+需要说明的是，absolute方式定位的坐标原点默认为body元素的坐标原点，在上例中，使用绝对定位的元素虽然包含在第三个div元素中，但计算它的位置时，还是从body元素的顶部开始。
+
+如果想要使absolute相对于所在父元素定位，则需要使父元素的position取值relative。如下例：
+
+```php
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>绝对定位的参照系</title>
+    <style type="text/css">
+    body {
+        width: 960px;
+        margin: 0 auto;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+
+    div {
+        width: 400px;
+        float: left;
+        margin: 0 20px 0 0
+    }
+
+    .absolute {
+        position: absolute;
+        left: 50px;
+    }
+
+    .bg {
+        background-color: #fcc;
+    }
+
+    code {
+        background-color: #ccc;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>以body为参照</h2>
+        <p>孩子，你真是快活啊，一早晨坐在泥土里，耍着折下来的小树枝。</p>
+        <p>我微笑着看你在那里耍着那根折下来的小树枝。</p>
+        <p class="bg absolute">我正忙着算账，一小时一小时在那里加叠数字。</p>
+        <p>也许你在看我，想到：“这种好没趣的游戏，竟把你的一早晨的好时间浪费掉了!"</p>
+        <p>孩子，我忘了聚精会神玩耍树枝与泥饼的方法了。</p>
+        <code>.absolute { position: absolute; left:50px;}
+      </code>
+    </div>
+    <div>
+        <div style="position:relative">
+            <h2>以父元素为参照</h2>
+            <p>孩子，你真是快活啊，一早晨坐在泥土里，耍着折下来的小树枝。</p>
+            <p>我微笑着看你在那里耍着那根折下来的小树枝。</p>
+            <p class="bg absolute">我正忙着算账，一小时一小时在那里加叠数字。</p>
+            <p>也许你在看我，想到：“这种好没趣的游戏，竟把你的一早晨的好时间浪费掉了!"</p>
+            <p>孩子，我忘了聚精会神玩耍树枝与泥饼的方法了。</p>
+            <code>.absolute { position: absolute; left:50px;}
+        </code>
+        </div>
+    </div>
+</body>
+
+</html>
+```
+
+上例的运行结果见：
+
+![](https://yangjh.gitee.io/front-end/images/absolute.png "绝对定位的参照原点")
+
+### top、right、bottom、left {#top、right、bottom、left}
+
+top、right、bottom、left属性用来设置对象参照相对物顶边界向下、向左、向上、向右偏移的位置，这四个属性的值可以是正值，也可以是负值，可以是整数，也可以是百分比。必须定义position属性值为 relative 、absolute 、 fixed 、 center 、 page，此属性方可生效。
+
+```css
+top:50%;
+right:10px;
+bottom:100px;
+left:0;
+```
+
+### clip {#clip}
+
+### z-index {#z-index}
+
+z-index属性用来设置对象的层叠顺序。同一个层叠上下文中，层叠级别（即z-index属性值）大的显示在上面，反之显示在下面。该属性对定义了position为 relative 、 absolute 、 fixed 、 center 、 page 、 sticky 的元素有效，如果只设定z-index属性，但不使用position属性，则z-index属性无效。例如：
+
+```php
+<!DOCTYPE HTML>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>z-index属性演示</title>
+    <style type="text/css">
+    body {
+        width: 960px;
+        margin: 0 auto;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+
+    h1 {
+        color: green;
+    }
+
+    div {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .index1 {
+        position: absolute;
+        left: 150px;
+        top: 150px;
+        background-color: #aaa;
+    }
+
+    .index2 {
+        background-color: #ccc;
+        position: absolute;
+        left: 190px;
+        top: 190px;
+    }
+
+    .index3 {
+        position: absolute;
+        left: 230px;
+        top: 230px;
+        z-index: 3;
+        background-color: #eee;
+    }
+
+    .index4 {
+        z-index: 4;
+        background-color: #999;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>z-index属性只对使用了position属性的元素有效</h1>
+    <div class="index4">z-index: 4</div>
+    <div class="index1">z-index: 1</div>
+    <div class="index2">z-index: 2</div>
+    <div class="index3">z-index: 3</div>
+</body>
+
+</html>
+```
+
+上例中虽然为div.index4设定了z-index的值，但从运行效果（如下图所示）来看，这个z-index值显然没有起作用。
+
+![](https://yangjh.gitee.io/front-end/images/z-index.png "z-index属性演示")
+
+### CSS中的居中 {#css中的居中}
+
+前面已经介绍，文字水平居中的方法为：
+
+```css
+text-align:center;
+```
+
+而元素的水平居中，通过设定margin-left和margin-right的值为auto实现，如：
+
+```css
+margin:0 auto;
+```
+
+单行文字的垂直居中，通过设定文字的行间距等于容器高度可以实现，例如：
+
+```css
+.center-text-trick {
+  height: 100px;
+  line-height: 100px;
+}
+```
+
+多行文字的的垂直居中，可通过利用表格的垂直居中属性vertical-align来实现，例如：
+
+```css
+<div class="center-table">
+  <p>I'm vertically centered multiple lines of text in a CSS-created table layout.</p>
+</div>
+.center-table {
+  display: table;
+  height: 250px;
+  background: white;
+  width: 240px;
+  margin: 20px;
+}
+.center-table p {
+  display: table-cell;
+  margin: 0;
+  background: black;
+  color: white;
+  padding: 20px;
+  border: 10px solid white;
+  vertical-align: middle;
+}
+```
+
+元素的垂直居中，在不知道元素高度的情况下，可以通过绝对定位来实现，\[Citation not found\]例如：
+
+```php
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>元素垂直居中实例</title>
+    <style>
+    main {
+        background: white;
+        height: 300px;
+        margin: 20px;
+        width: 300px;
+        position: relative;
+        resize: vertical;
+        overflow: auto;
+    }
+
+    main div {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        right: 20px;
+        background: black;
+        color: white;
+        padding: 20px;
+        transform: translateY(-50%);
+        resize: vertical;
+        overflow: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            我是一个块级元素，高度未知，我在父元素中垂直居中。
+        </div>
+    </main>
+</body>
+
+</html>
+```
+
+当我们不知道元素的宽度和高度时，可以使用如下的方法：
+
+```css
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+```
+
 
 
