@@ -131,22 +131,14 @@ HTML 4.01 针对下列元素定义 name 属性：a, applet, frame, iframe, img, 
 
 这是错误的：
 
-```
-<
-img src="picture.gif" 
-name
-="picture1" /
->
+```php
+<img src="picture.gif" name="picture1" />
 ```
 
 这是正确的：
 
-```
-<
-img src="picture.gif" 
-id
-="picture1" /
->
+```php
+<img src="picture.gif" id="picture1" />
 ```
 
 ### 重要的兼容性提示：
