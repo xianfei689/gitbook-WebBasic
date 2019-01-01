@@ -80,7 +80,8 @@ Q 元素表示对外部资料的直接引用。
 
 ```php
 <p>
-    万维网联盟在其 <cite>About W3C</cite> 页面中表明，它的使命是 <q cite="http://www.w3.org/Consortium/">通过制定协议和规范，引导万维网发挥其全部潜力，确保万维网的长期发展。</q>. 
+    万维网联盟在其 <cite>About W3C</cite> 页面中表明，它的使命是 
+    <q cite="http://www.w3.org/Consortium/">通过制定协议和规范，引导万维网发挥其全部潜力，确保万维网的长期发展。</q>. 
 </p>
 ```
 
