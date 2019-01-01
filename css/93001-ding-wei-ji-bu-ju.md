@@ -93,3 +93,35 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 
 常见的图文混排效果，就是通过浮动来实现。
 
+```php
+<div class="item">
+<div class="img_area">
+<a target="_blank" href="http://zhibo.qq.com/mbask/1844/index.html">
+<img src="http://t3.qlogo.cn/mbloghead/72f0353448bac74e1d86/50" alt="罗崇敏：安全不保 何谈教育" title="罗崇敏：安全不保 何谈教育">
+</a>
+</div>
+<div class="text_area">
+<h5>
+罗崇敏，中共云南省委高校工委书记，云南省教育厅长
+<a class="more" target="_blank" href="http://zhibo.qq.com/mbask/1844/index.html">[详细]</a>
+</div>
+</div>
+<div class="item">
+<div class="img_area">
+<a target="_blank" href="http://zhibo.qq.com/mbask/1833/index.html">
+<img src="http://t3.qlogo.cn/mbloghead/ca99366b03bb20d692bc/50" 
+alt="王旭明：如何避免校车惨剧一再发生" title="王旭明：如何避免校车惨剧一再发生">
+</a>
+</div>
+<div class="text_area">
+<h5>
+<a target="_blank" href="http://zhibo.qq.com/mbask/1833/index.html">王旭明：如何避免惨剧再发生</a>
+</h5>
+王旭明，教育部语文出版社社长，原教育部新闻发言人
+<a class="more" target="_blank" href="http://zhibo.qq.com/mbask/1833/index.html">[详细]</a>
+</div>
+</div>
+```
+
+
+
