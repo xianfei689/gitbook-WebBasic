@@ -301,68 +301,36 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 #### Values: {#values}
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- flex-start
-;
-/* Safari */
-align-content
-:
-         flex-start
-;
+.flex-container {
+  -webkit-align-content: flex-start; /* Safari */
+  align-content:         flex-start;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-flex-start.png "CSS flexbox")与交叉轴的起点对齐。
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- flex-end
-;
-/* Safari */
-align-content
-:
-         flex-end
-;
+.flex-container {
+  -webkit-align-content: flex-end; /* Safari */
+  align-content:         flex-end;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-flex-end.png "CSS flexbox")与交叉轴的终点对齐。
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- center
-;
-/* Safari */
-align-content
-:
-         center
-;
+.flex-container {
+  -webkit-align-content: center; /* Safari */
+  align-content:         center;
 }
 ```
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-center.png "CSS flexbox")与交叉轴的中点对齐。
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- space-between
-;
-/* Safari */
-align-content
-:
-         space-between
-;
+.flex-container {
+  -webkit-align-content: space-between; /* Safari */
+  align-content:         space-between;
 }
 ```
 
