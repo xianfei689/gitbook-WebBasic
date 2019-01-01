@@ -156,14 +156,8 @@ UI元素伪类选择符可以针对UI元素的状态进行选择。
 
 否定伪类选择符`:not(X)`，将匹配不含有X选择符的元素。例如：
 
-```
-.demo li:not(:last-child)
-{
-border-bottom
-:
- 1px solid #ddd
-;
-}
+```css
+.demo li:not(:last-child) { border-bottom: 1px solid #ddd; }
 ```
 
 上述规则将匹配给定列表项（除最后一项之外），使其有一条红色的下划线。
