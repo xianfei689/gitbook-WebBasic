@@ -227,7 +227,7 @@ CSS部分：
 ```css
 .stage:hover .ball {
         animation-name: slide;
-    }
+}
 ```
 
 #### 动画持续时间、缓动效果及延迟 {#动画持续时间、缓动效果及延迟}
