@@ -108,7 +108,7 @@
 
 `style`元素是`head`元素的子元素，用来设定HTML文档的内部样式表。
 
-```
+```php
 <!DOCTYPE html>
 <html lang="en-US">
  <head>
