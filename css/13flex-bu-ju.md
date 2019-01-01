@@ -195,7 +195,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-flex-start.png "CSS flexbox")左对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-justify-content: flex-end; /* Safari */
   justify-content:         flex-end;
@@ -213,7 +214,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-center.png "CSS flexbox")居中。
 
-```
+```css
+
 .flex-container {
   -webkit-justify-content: space-between; /* Safari */
   justify-content:         space-between;
@@ -222,7 +224,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/justify-content-space-between.png "CSS flexbox")两端对齐，项目之间的间隔相等。
 
-```
+```css
+
 .flex-container {
   -webkit-justify-content: space-around; /* Safari */
   justify-content:         space-around;
@@ -243,7 +246,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values: {#values}
 
-```
+```css
+
 .flex-container {
   -webkit-align-items: flex-start; /* Safari */
   align-items:         flex-start;
@@ -252,7 +256,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-flex-start.png "CSS flexbox")交叉轴的起点对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-align-items: flex-end; /* Safari */
   align-items:         flex-end;
@@ -279,7 +284,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-items-baseline.png "CSS flexbox")项目的第一行文字的基线对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-align-items: stretch; /* Safari */
   align-items:         stretch;
@@ -292,7 +298,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 `align-content`定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
 
-```
+```css
+
 .flex-container {
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
@@ -300,7 +307,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values: {#values}
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: flex-start; /* Safari */
   align-content:         flex-start;
@@ -309,7 +317,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-flex-start.png "CSS flexbox")与交叉轴的起点对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: flex-end; /* Safari */
   align-content:         flex-end;
@@ -318,7 +327,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-flex-end.png "CSS flexbox")与交叉轴的终点对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: center; /* Safari */
   align-content:         center;
@@ -327,7 +337,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-center.png "CSS flexbox")与交叉轴的中点对齐。
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: space-between; /* Safari */
   align-content:         space-between;
@@ -336,7 +347,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-space-between.png "CSS flexbox")与交叉轴两端对齐，轴线之间的间隔平均分布。
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: space-around; /* Safari */
   align-content:         space-around;
@@ -345,7 +357,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 ![](https://yangjh.gitee.io/front-end/images/align-content-space-around.png "CSS flexbox")每根轴线两侧的间隔都相等。
 
-```
+```css
+
 .flex-container {
   -webkit-align-content: stretch; /* Safari */
   align-content:         stretch;
@@ -377,7 +390,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values: {#values}
 
-```
+```css
+
 .flex-item {
   -webkit-flex-grow: <number>; /* Safari */
   flex-grow:         <number>;
@@ -394,7 +408,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values: {#values}
 
-```
+```css
+
 .flex-item {
   -webkit-flex-shrink: <number>; /* Safari */
   flex-shrink:         <number>;
@@ -413,7 +428,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values： {#values：}
 
-```
+```css
+
 .flex-item {
   -webkit-flex-basis: auto | <width>; /* Safari */
   flex-basis:         auto | <width>;
@@ -428,7 +444,8 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values： {#values：}
 
-```
+```css
+
 .flex-item {
   -webkit-flex: none | auto | [ <flex-grow> <flex-shrink>? || <flex-basis> ]; /* Safari */
   flex:         none | auto | [ <flex-grow> <flex-shrink>? || <flex-basis> ];
@@ -441,7 +458,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 
 #### Values： {#values：}
 
-```
+```css
 .flex-item {
   -webkit-align-self: auto | flex-start | flex-end | center | baseline | stretch; /* Safari */
   align-self:         auto | flex-start | flex-end | center | baseline | stretch;
