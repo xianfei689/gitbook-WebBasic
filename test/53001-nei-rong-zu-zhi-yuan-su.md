@@ -12,7 +12,7 @@
 
 address元素用来表示联系方式。
 
-```
+```php
 <footer>
  <address>
   要了解更多信息，请联系<a href="mailto:js@example.com">作者</a>.
@@ -49,54 +49,14 @@ address元素用来表示联系方式。
 
 `Dl`元素表示一组包含“名称-值”的自定义列表，其中名称使用`dt`标记，值可以是一个或者多个`dd`元素。
 
-```
-<
-dl
->
-<
-dt
->
- 作者 
-<
-/
-dt
->
-<
-dd
->
- Adam 
-<
-/
-dd
->
-<
-dd
->
- Cui 
-<
-/
-dd
->
-<
-dt
->
- 编辑 
-<
-/
-dt
->
-<
-dd
->
- Fang 
-<
-/
-dd
->
-<
-/
-dl
->
+```php
+<dl>
+ <dt> 作者 </dt>
+ <dd> Adam </dd>
+ <dd> Cui </dd>
+ <dt> 编辑 </dt>
+ <dd> Fang </dd>
+</dl>
 ```
 
 ### dt {#dt}
@@ -111,30 +71,11 @@ dl
 
 `Figure`元素用来表示对插图、图表、照片、代码块等内容的引用。
 
-```
-<
-figure
->
-<
-img
-src
-=
-"
-bubbles-work.jpeg
-"
->
-<
-figcaption
->
-图片标题
-<
-/
-figcaption
->
-<
-/
-figure
->
+```php
+<figure>
+ <img src="bubbles-work.jpeg">
+ <figcaption>图片标题</figcaption>
+</figure>
 ```
 
 ### figcaption {#figcaption}
@@ -147,104 +88,34 @@ figure
 
 `main`元素不要放在`article、 aside、 footer、 header、或者 nav`元素中。
 
-```
-<
-!DOCTYPE html
->
-<
-html
->
-<
-head
->
-<
-title
->
-………………
-<
-/
-title
->
-<
-/
-head
->
-<
-body
->
-<
-header
->
-<
-nav
->
-<
-ul
->
-<
-li
->
-……
-<
-/
-li
->
-<
-li
->
-……
-<
-/
-li
->
-<
-li
->
-……
-<
-/
-li
->
-<
-/
-ul
->
-<
-/
-nav
->
-<
-/
-header
->
-<
-main
->
+```php
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>………………</title>
+  </head>
+  <body>
 
+  <header>
+  <nav>
+  <ul>
+  <li>……</li>
+  <li>……</li>
+  <li>……</li>
+  </ul>
+  </nav>
+  </header>
+
+  <main>
   …………
   …………
   …………
-  
-<
-/
-main
->
-<
-footer
->
-…………
-<
-/
-footer
->
-<
-/
-body
->
-<
-/
-html
->
+  </main>
+
+  <footer>…………</footer>
+
+  </body>
+  </html>
 ```
 
 ### div {#div}
