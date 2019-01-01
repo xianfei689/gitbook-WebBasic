@@ -250,5 +250,54 @@ body {
 </html>
 ```
 
+在本例中，我们需要类名为normal\_area的div元素不和左浮动模块并排显示，而是另起一行，因此，我们为其声明了“clear：both”的CSS规则，该规则表示将类名为normal\_area的div元素不受之前左右浮动元素的影响，具体到上例中，“clear：both”完全可以用“clear：left”代替，显示效果是一致的。 除了上述的方法外，我们还可以在需要清除浮动的地方插入空白div，为其声明内嵌样式表，在样式表中声明clear属性即可。如下例所示：
+
+```php
+<div class="item">
+  <div class="float_area">左浮动模块</div>
+  <div class="float_area">左浮动模块</div>
+  <div style=”clear:both;”></div>
+  <div class="normal_area">希望按正常流显示的模块</div>
+</div>
+```
+
+这种方法对于初学者容易理解和掌握，但内容为空的div元素，在语义上并不十分完美，实际工作中广泛采用的是名为“clearfix”的一种技巧：
+
+```php
+.clearfix:before,.clearfix:after {
+    display: table;
+  content: " ";
+}
+.clearfix:after {
+    clear:both;
+}
+```
+
+这种clearfix方案，生成了两个伪元素，并将其display设置成table。这将创建一个匿名的table-cell和一个新的块状区域，这意味着：:before伪元素阻止了顶部边缘塌陷。而:after伪元素清除了浮动。其结果是，只需要在包含浮动元素的容器上添加class=“clearfix”属性，没有必要专门添加HTML元素，减少清楚浮动所需的代码量，提高了工作效率。
+
+在CSS中，和定位相关的常用属性有position、top、right、bottom、left、z-index。通过这些属性，设计人员可以控制元素的精确定位。
+
+### position {#position}
+
+position属性用来设定对象的定位方式。它的值有：
+
+1. **static**
+   对象遵循常规流。top，right，bottom，left等属性不会被应用,static是position属性的默认值。
+2. **relative**
+   对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left属性进行偏移时不影响常规流中的任何元素。
+3. **absolute**
+   对象脱离常规流，使用top，right，bottom，left等属性进行绝对定位，盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。
+4. **fixed**
+   对象脱离常规流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。
+5. **center**
+   对象脱离常规流，使用top，right，bottom，left等属性指定盒子的位置或尺寸大小。盒子在其包含容器垂直水平居中。盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。（CSS3新增属性）
+6. **page**
+   盒子的位置计算参照absolute。盒子在分页媒体或者区域块内，盒子的包含块始终是初始包含块，否则取决于每个absolute模式。（CSS3新增属性）
+7. **sticky**
+   对象在常态时遵循常规流。它就像是 relative 和 fixed 的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。该属性的表现是现实中你见到的吸附效果。（CSS3新增属性）
+
+其中relative和absolute方式使用较多，它们的区别可从下面的例子中看出：
+
+  
 
 
