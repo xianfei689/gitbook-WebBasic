@@ -47,7 +47,7 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 }
 ```
 
-**注意，设为 Flex 布局以后，子元素的`float`、`clear`和`vertical-align`属性将失效。**
+**注意，设为 Flex 布局以后，子元素的**`float`**、**`clear`**和**`vertical-align`**属性将失效。**
 
 ## Flexbox容器特性 {#flexbox容器特性}
 
@@ -142,17 +142,9 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 设置自动换行，且第一行在上方。
 
 ```
-.flex-container
-{
--webkit-flex-wrap
-:
- wrap-reverse
-;
-/* Safari */
-flex-wrap
-:
-         wrap-reverse
-;
+.flex-container {
+  -webkit-flex-wrap: wrap-reverse; /* Safari */
+  flex-wrap:         wrap-reverse;
 }
 ```
 
