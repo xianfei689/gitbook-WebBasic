@@ -337,17 +337,9 @@ Flex box布局模型的主要目的是提供更有效率的布局方式，尤其
 ![](https://yangjh.gitee.io/front-end/images/align-content-space-between.png "CSS flexbox")与交叉轴两端对齐，轴线之间的间隔平均分布。
 
 ```
-.flex-container
-{
--webkit-align-content
-:
- space-around
-;
-/* Safari */
-align-content
-:
-         space-around
-;
+.flex-container {
+  -webkit-align-content: space-around; /* Safari */
+  align-content:         space-around;
 }
 ```
 
