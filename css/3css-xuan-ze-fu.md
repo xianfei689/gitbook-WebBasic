@@ -124,42 +124,12 @@ UI元素伪类选择符可以针对UI元素的状态进行选择。
    表示文档的根元素，在HTML4中，该选择符将始终选择html元素。
 2. **:nth-child\(\)**
    代表同一父级元素的第N个元素。如：
-   ```
-   tr
-   :
-   nth-child
-   (
-   2n+1
-   )
-   /* 表示表格中的奇数行 */
-   tr
-   :
-   nth-child
-   (
-   odd
-   )
-   /* 同上 */
-   tr
-   :
-   nth-child
-   (
-   2n+0
-   )
-   /* 表示表格中的偶数行 */
-   tr
-   :
-   nth-child
-   (
-   even
-   )
-   /* 同上 */
-   tr
-   :
-   nth-child
-   (
-   5
-   )
-   /* 表示表格中的第5行 */
+   ```css
+      tr:nth-child(2n+1) /* 表示表格中的奇数行 */
+      tr:nth-child(odd)  /* 同上 */
+      tr:nth-child(2n+0) /* 表示表格中的偶数行 */
+      tr:nth-child(even) /* 同上 */
+      tr:nth-child(5)      /* 表示表格中的第5行 */
    ```
 3. **:nth-last-child\(\)**
    表示在同一父元素中，从后往前计算的第N个元素。
