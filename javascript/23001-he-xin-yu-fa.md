@@ -21,33 +21,11 @@ Everything in between is a comment.
 所谓变量就是程序中数据的临时存放场所。JavaScript的变量定义都是使用“var”关键字，示例如下：
 
 ```
-var
- author 
-=
-"yangjh"
-;
-var
- age 
-=
-35
-;
-var
- Age 
-=
-36
-;
-var
- male 
-=
-true
-;
-var
- a
-,
-b
-,
-c
-;
+var author = "yangjh";
+var age = 35;
+var Age = 36;
+var male = true;
+var a,b,c;
 ```
 
 上述三行代码中，var关键字表示声明变量，变量名紧跟其后，通过等于号将变量赋予变量初始值。每一行结束的分号可以不写，但书写分号后，能增强代码的可读性，加不加分号取决于个人选择。
@@ -65,45 +43,12 @@ c
 JavaScript行末可以不加分号，建议能不加分号就不加，那在什么时候需要加分号呢？真正会导致上下行解析出问题的 token 有 5 个：括号，方括号，正则开头的斜杠，加号，减号。实际代码中用正则、加号、减号作为行首的情况几乎没有，所以总结下来就是一句话：**一行开头是括号或者方括号的时候加上分号就可以了，其他时候全部不需要。**例如：
 
 ```
-const
- a 
-=
-2
-;
-[
-3
-,
-4
-]
-.
-forEach
-(
-n 
-=
->
- console
-.
-log
-(
-n
-)
-)
-
-a 
-=
- b
-;
-(
-function
-(
-)
-{
+const a = 2;
+[ 3, 4 ].forEach(n => console.log(n))
+a = b;
+(function(){
 ...
-}
-)
-(
-)
-;
+})();
 ```
 
 上述代码第一行末如果不加分号，则会报错，第三行如果不加分号，就会被编译器解释`a = b(function(){...})()`，这和加了分号的语义是不一致的。
@@ -113,23 +58,8 @@ function
 常量意味着其中保存的值是固定不变的，JavaScript使用关键字const声明常量，习惯上，常量名称使用大写字母。
 
 ```
-const
-A
-=
-7
-;
-
-console
-.
-log
-(
-"A is "
-+
-A
-+
-"."
-)
-;
+const A = 7;
+console.log("A is " + A + ".");
 ```
 
 上面的例子将输出 "A is 7."。
@@ -176,24 +106,9 @@ A
 连接运算符“+”能将字符串连接起来构成一个新的字符串。如：
 
 ```
-var
- txt1 
-=
-"JavaScript"
-；
-
-var
- txt2 
-=
-"基础教程"
-;
-var
- txt3 
-=
- txt1 
-+
- txt2
-;
+var txt1 = "JavaScript"；
+var txt2 = "基础教程";
+var txt3 = txt1 + txt2;
 ```
 
 变量txt3的结果是“JavaScript基础教程”。
@@ -208,16 +123,10 @@ var
 
 ```
 {
-
-  statement_1
-;
-
-  statement_2
-;
-...
-
-  statement_n
-;
+  statement_1;
+  statement_2;
+  ...
+  statement_n;
 }
 ```
 
@@ -228,45 +137,17 @@ var
 break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。
 
 ```
-function
-testBreak
-(
-x
-)
-{
-var
- i 
-=
-0
-;
-while
-(
-i 
-<
-6
-)
-{
-if
-(
-i 
-==
-3
-)
-{
-break
-;
-}
+function testBreak(x) {
+  var i = 0;
 
-    i 
-+=
-1
-;
-}
-return
- i 
-*
- x
-;
+  while (i < 6) {
+    if (i == 3) {
+      break;
+    }
+    i += 1;
+  }
+
+  return i * x;
 }
 ```
 
@@ -275,20 +156,10 @@ return
 根据设定条件，选择性地执行语句，当指定条件为true时会执行一条语句，如果该条件为false，则执行另一条语句。
 
 ```
-if
-(
-condition
-)
-{
-
+if (condition) {
    statements1
-
-}
-else
-{
-
+} else {
    statements2
-
 }
 ```
 
@@ -297,55 +168,24 @@ else
 switch 语句对一个表达式求值，将结果与 case 子语句比较，如果匹配，则从 case 处的语句向下执行。
 
 ```
-switch
-(
-expression
-)
-{
-case
- value1
-:
-// 当 expression 的结果与 value1 匹配时，从此处开始执行
-
+switch (expression) {
+  case value1:
+    // 当 expression 的结果与 value1 匹配时，从此处开始执行
     statements1；
-    
-[
-break
-;
-]
-case
- value2
-:
-// 当 expression 的结果与 value2 匹配时，从此处开始执行
-
-    statements2
-;
-[
-break
-;
-]
-...
-case
- valueN
-:
-// 当 expression 的结果与 valueN 匹配时，从此处开始执行
-
-    statementsN
-;
-[
-break
-;
-]
-default
-:
-// 如果 expression 与上面的 value 值都不匹配时，执行此处的语句
-
-    statements_def
-;
-[
-break
-;
-]
+    [break;]
+  case value2:
+    // 当 expression 的结果与 value2 匹配时，从此处开始执行
+    statements2;
+    [break;]
+  ...
+  case valueN:
+    // 当 expression 的结果与 valueN 匹配时，从此处开始执行
+    statementsN;
+    [break;]
+  default:
+    // 如果 expression 与上面的 value 值都不匹配时，执行此处的语句
+    statements_def;
+    [break;]
 }
 ```
 
@@ -356,30 +196,9 @@ switch语句中的break语句，能保证程序执行到该语句时，不再执
 for语句创建一个包含初始条件、终止条件和步进规则的循环体。例如下面的代码将循环10次（从0-9），然后在控制台中打印出0-9的数字：
 
 ```
-for
-(
-var
- i 
-=
-0
-;
- i 
-<
-9
-;
- i
-++
-)
-{
-
-   console
-.
-log
-(
-i
-)
-;
-// more statements
+for (var i = 0; i < 9; i++) {
+   console.log(i);
+   // more statements
 }
 ```
 
@@ -388,14 +207,8 @@ i
 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。语法如下：
 
 ```
-while
-(
-condition
-)
-{
-
+while (condition) {
   statement
-
 }
 ```
 
@@ -404,18 +217,11 @@ condition
 do...while 语句创建了一个循环，该循环执行一个指定的语句直到condition 的值为 false。 condition 在执行statement后才会被赋值，statement至少执行一次。语法如下：
 
 ```
-do
-{
-
-   statement
-;
-...
-}
-while
-(
-condition
-)
-;
+do {
+   statement;
+   ...
+ }
+while (condition);
 ```
 
 ## 函数 {#函数}
@@ -423,28 +229,8 @@ condition
 使用关键字function声明一个函数。函数还可有参数和返回值。
 
 ```
-function
-name
-(
-[
-param
-,
-[
-,
- param
-,
-[
-...
-,
- param
-]
-]
-]
-)
-{
-[
-statements
-]
+function name([param,[, param,[..., param]]]) {
+   [statements]
 }
 ```
 
@@ -458,49 +244,14 @@ statements
 
 ```
 // 当参数a大于10且参数func2是一个方法时 执行func2
-function
-func1
-(
-a
-,
- func2
-)
-{
-if
-(
-a 
->
-10
-&
-&
-typeof
- func2 
-==
-'function'
-)
-{
-func2
-(
-)
+function func1(a, func2) {
+    if (a > 10 && typeof func2 == 'function') {
+        func2()
+    }
 }
-}
-func1
-(
-11
-,
-function
-(
-)
-{
-
-    console
-.
-log
-(
-'this is a callback'
-)
-}
-)
+func1(11, function() {
+    console.log('this is a callback')
+})
 ```
 
 通常情况下，回调函数当func1执行到某一步或者满足某种条件的时候才执行传入的参数func2。
