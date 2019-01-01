@@ -201,7 +201,7 @@ CSS部分：
 
 为了设定动画过程，需要使用@keyframes 指定关键帧，@keyframes 的规则包含动画名称、动画断点以及产生变化的属性。例如：
 
-```
+```css
 @keyframes slide {
   0% {
     left: 0;
@@ -224,14 +224,10 @@ CSS部分：
 
 使用keyframes指定关键帧时，需要命名动画名称\(animation-name\)，该名称将在元素声明动画（animation）属性时使用。例如：
 
-```
-.stage:hover .ball
-{
-animation-name
-:
- slide
-;
-}
+```css
+.stage:hover .ball {
+        animation-name: slide;
+    }
 ```
 
 #### 动画持续时间、缓动效果及延迟 {#动画持续时间、缓动效果及延迟}
