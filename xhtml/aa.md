@@ -65,5 +65,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 </html>
 ```
 
+### 存在三种XHTML文档类型：
+
+* STRICT（严格类型）
+* TRANSITIONAL（过渡类型）
+* FRAMESET（框架类型）
+
 
 
