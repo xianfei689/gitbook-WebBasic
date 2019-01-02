@@ -1,10 +1,10 @@
-# JavaScript核心语法 {#javascript核心语法}
+# 2、核心语法
 
-## 注释 {#注释}
+## 注释 <a id="&#x6CE8;&#x91CA;"></a>
 
 JavaScript的注释和CSS注释类似，分多行和单行，多行注释使用`/* ... */`，如：
 
-```js
+```javascript
 /*
 Everything in between is a comment.
 */
@@ -12,15 +12,15 @@ Everything in between is a comment.
 
 单行注释使用“`//`”表示，如：
 
-```js
+```javascript
 // This is a comment
 ```
 
-## 变量 {#变量}
+## 变量 <a id="&#x53D8;&#x91CF;"></a>
 
 所谓变量就是程序中数据的临时存放场所。JavaScript的变量定义都是使用“var”关键字，示例如下：
 
-```js
+```javascript
 var author = "yangjh";
 var age = 35;
 var Age = 36;
@@ -38,11 +38,11 @@ var a,b,c;
 4. 变量名对大小写敏感，例如：变量age和Age是不同的变量。
 5. 变量名中不能有空格、回车符或其他标点字符。
 
-## 分号 {#分号}
+## 分号 <a id="&#x5206;&#x53F7;"></a>
 
 JavaScript行末可以不加分号，建议能不加分号就不加，那在什么时候需要加分号呢？真正会导致上下行解析出问题的 token 有 5 个：括号，方括号，正则开头的斜杠，加号，减号。实际代码中用正则、加号、减号作为行首的情况几乎没有，所以总结下来就是一句话：**一行开头是括号或者方括号的时候加上分号就可以了，其他时候全部不需要。**例如：
 
-```js
+```javascript
 const a = 2;
 [ 3, 4 ].forEach(n => console.log(n))
 a = b;
@@ -53,26 +53,26 @@ a = b;
 
 上述代码第一行末如果不加分号，则会报错，第三行如果不加分号，就会被编译器解释`a = b(function(){...})()`，这和加了分号的语义是不一致的。
 
-## 常量 {#常量}
+## 常量 <a id="&#x5E38;&#x91CF;"></a>
 
 常量意味着其中保存的值是固定不变的，JavaScript使用关键字const声明常量，习惯上，常量名称使用大写字母。
 
-```js
+```javascript
 const A = 7;
 console.log("A is " + A + ".");
 ```
 
 上面的例子将输出 "A is 7."。
 
-## 运算符 {#运算符}
+## 运算符 <a id="&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 运算符用于将一个或多个值运算成结果。在Javascript中，常用的运算符有以下几种类别：
 
-### 算术运算符 {#算术运算符}
+### 算术运算符 <a id="&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 算术运算符能对操作数进行运算，返回一个数值型的值。常见的有`+、-、 *、/`。
 
-### 关系运算符 {#关系运算符}
+### 关系运算符 <a id="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 关系运算符通常用于检查两个操作数之间的关系，返回值为true或false。
 
@@ -87,11 +87,11 @@ console.log("A is " + A + ".");
 | &gt;= | 是否大于等于 | 5&gt;=8 | FALSE |
 | &lt;= | 是否小于等于 | 5&lt;=8 | TRUE |
 
-### 赋值运算符 {#赋值运算符}
+### 赋值运算符 <a id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 赋值运算符是使用最多的运算符，常见的赋值运算符就是“=”，它将右边的值赋与等号左边的变量。
 
-### 逻辑运算符 {#逻辑运算符}
+### 逻辑运算符 <a id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 逻辑运算符用来判断操作数之间的逻辑关系，返回值为true和false。javascript支持一下三种逻辑运算符。
 
@@ -101,11 +101,11 @@ console.log("A is " + A + ".");
 | \|\| | 逻辑或 | 5&gt;3 \|\| 3&gt;5 | FALSE |
 | ! | 逻辑非 | !\(3&gt;5\) | TRUE |
 
-### 连接运算符 {#连接运算符}
+### 连接运算符 <a id="&#x8FDE;&#x63A5;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 连接运算符“+”能将字符串连接起来构成一个新的字符串。如：
 
-```js
+```javascript
 var txt1 = "JavaScript"；
 var txt2 = "基础教程";
 var txt3 = txt1 + txt2;
@@ -113,15 +113,15 @@ var txt3 = txt1 + txt2;
 
 变量txt3的结果是“JavaScript基础教程”。
 
-## 流程控制 {#流程控制}
+## 流程控制 <a id="&#x6D41;&#x7A0B;&#x63A7;&#x5236;"></a>
 
 和其他语言一样，JavaScript也是由上到下逐行执行代码，还可以通过分支、循环改变执行流程。
 
-### 语句块 {#语句块}
+### 语句块 <a id="&#x8BED;&#x53E5;&#x5757;"></a>
 
 语句块用来组织多条语句。用一对花括号界定语句块。语法如下：
 
-```js
+```javascript
 {
   statement_1;
   statement_2;
@@ -132,11 +132,11 @@ var txt3 = txt1 + txt2;
 
 注意语句块不是以分号结尾。语句块常在流程控制语句中使用。
 
-### break {#break}
+### break <a id="break"></a>
 
 break 语句中止当前循环，switch语句或label 语句，并把程序控制流转到紧接着被中止语句后面的语句。
 
-```js
+```javascript
 function testBreak(x) {
   var i = 0;
 
@@ -151,11 +151,11 @@ function testBreak(x) {
 }
 ```
 
-### if...else {#ifelse}
+### if...else <a id="ifelse"></a>
 
 根据设定条件，选择性地执行语句，当指定条件为true时会执行一条语句，如果该条件为false，则执行另一条语句。
 
-```
+```text
 if (condition) {
    statements1
 } else {
@@ -163,11 +163,11 @@ if (condition) {
 }
 ```
 
-### switch {#switch}
+### switch <a id="switch"></a>
 
 switch 语句对一个表达式求值，将结果与 case 子语句比较，如果匹配，则从 case 处的语句向下执行。
 
-```js
+```javascript
 switch (expression) {
   case value1:
     // 当 expression 的结果与 value1 匹配时，从此处开始执行
@@ -191,32 +191,32 @@ switch (expression) {
 
 switch语句中的break语句，能保证程序执行到该语句时，不再执行后续语句，而是跳出switch语句块。
 
-### for {#for}
+### for <a id="for"></a>
 
 for语句创建一个包含初始条件、终止条件和步进规则的循环体。例如下面的代码将循环10次（从0-9），然后在控制台中打印出0-9的数字：
 
-```js
+```javascript
 for (var i = 0; i < 9; i++) {
    console.log(i);
    // more statements
 }
 ```
 
-### while {#while}
+### while <a id="while"></a>
 
 while 语句可以在某个条件表达式为真的前提下，循环执行指定的一段代码，直到那个表达式不为真时结束循环。语法如下：
 
-```js
+```javascript
 while (condition) {
   statement
 }
 ```
 
-### do...while {#dowhile}
+### do...while <a id="dowhile"></a>
 
 do...while 语句创建了一个循环，该循环执行一个指定的语句直到condition 的值为 false。 condition 在执行statement后才会被赋值，statement至少执行一次。语法如下：
 
-```js
+```javascript
 do {
    statement;
    ...
@@ -224,11 +224,11 @@ do {
 while (condition);
 ```
 
-## 函数 {#函数}
+## 函数 <a id="&#x51FD;&#x6570;"></a>
 
 使用关键字function声明一个函数。函数还可有参数和返回值。
 
-```js
+```javascript
 function name([param,[, param,[..., param]]]) {
    [statements]
 }
@@ -238,11 +238,11 @@ function name([param,[, param,[..., param]]]) {
 
 定义函数的时候，并不会执行构成该函数的任何语句。只有当调用该函数时，函数里面的语句才会执行，直到碰到return语句，return语句之后的内容不会被执行。
 
-### 回调函数 {#回调函数}
+### 回调函数 <a id="&#x56DE;&#x8C03;&#x51FD;&#x6570;"></a>
 
 在JavaScript中，回调函数具体的定义为：函数A作为参数\(函数引用\)传递到另一个函数B中，并且这个函数B执行函数A。我们就说函数A叫做回调函数。如果没有名称\(函数表达式\)，就叫做匿名回调函数。例如：
 
-```js
+```javascript
 // 当参数a大于10且参数func2是一个方法时 执行func2
 function func1(a, func2) {
     if (a > 10 && typeof func2 == 'function') {

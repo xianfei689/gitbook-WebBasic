@@ -1,12 +1,12 @@
-## 盒模型 {#盒模型}
+# 8、CSS盒模型
 
 在理解CSS是如何控制页面显示效果的时候，我们必须要掌握盒模型（Box Model）和定位（position）机制。CSS借助于盒模型和定位机制，结合文档树，能够精确、高效地控制内容在页面中的位置，从而实现页面的布局。
 
-### 盒模型的概念 {#盒模型的概念}
+## 盒模型的概念 <a id="&#x76D2;&#x6A21;&#x578B;&#x7684;&#x6982;&#x5FF5;"></a>
 
 所有HTML元素，在页面的呈现过程中，都遵循CSS制定的盒模型（Box Model），盒模型是一个包含外边距、边框线、内边距以及内容的矩形容器。具体如下图所示：[\[14\]](https://yangjh.gitee.io/front-end/References.html#cite-14)
 
-![](https://yangjh.gitee.io/front-end/images/box.png "盒模型")
+![&#x76D2;&#x6A21;&#x578B;](https://yangjh.gitee.io/front-end/images/box.png)
 
 从图中我们可以看到，元素的盒模型由外边距\(margin\)、边框线\(border\)、内边距（padding）以及元素的内容（content）构成，CSS对外边距、边框线、内边距的控制可以分方向进行，也可以整体控制，如上图中的TM就表示上侧外边距、LM表示左侧外边距、RM表示右侧外边距、BM表示底侧外边距。
 
@@ -16,7 +16,7 @@
 
 盒模型的高度 = "margin-top" + "border-top" + p"adding-top" + "height" + p"adding-bottem" + "border-bottom" + "margin-right"
 
-### 设置盒子大小 {#设置盒子大小}
+## 设置盒子大小 <a id="&#x8BBE;&#x7F6E;&#x76D2;&#x5B50;&#x5927;&#x5C0F;"></a>
 
 在CSS中，可以使用盒模型的width和height属性为除行内元素之外的大多数元素设置高度和宽度。行内元素的宽度和高度取决于自身内容。
 
@@ -33,7 +33,7 @@
 
 除了width和height之外，CSS还提供了max-height、max-width、min-height、min-width属性。
 
-### 设置外边距 {#设置外边距}
+## 设置外边距 <a id="&#x8BBE;&#x7F6E;&#x5916;&#x8FB9;&#x8DDD;"></a>
 
 外边距用来控制元素之间的距离，在CSS中，使用margin属性来控制外边距，外边距是透明的空间量。内容之间适当的空间能够增加内容的可读性。除行内元素不接受上下外边距的设定外，其他元素都可以设定外边距。
 
@@ -81,11 +81,11 @@ div {
 }
 ```
 
-### 设定内边距 {#设定内边距}
+## 设定内边距 <a id="&#x8BBE;&#x5B9A;&#x5185;&#x8FB9;&#x8DDD;"></a>
 
 CSS中使用padding表示内边距，内边距和外边距在很多方面是相似的。padding的值可以是带单位的长度或者是百分比。padding属性值中没有auto。padding属性值可以是1-4个值，其意义与margin相同。padding也可以分侧指定，如padding-top、padding-right、padding-bottom、padding-left。
 
-### 设置边框 {#设置边框}
+## 设置边框 <a id="&#x8BBE;&#x7F6E;&#x8FB9;&#x6846;"></a>
 
 边框是进行信息组织是的一种有效手段，通过边框的使用，能够区分不同类型的信息，而且边框还是一种装饰手段，能在组织信息的同时美化页面。CSS提供了border-style、border-width和border-color以及border元素来控制边框的样式、宽度以及颜色。如：
 
@@ -129,7 +129,7 @@ border的值中必须要指定的是border-style，其他两个可以任意组�
 }
 ```
 
-### 圆角 {#圆角}
+## 圆角 <a id="&#x5706;&#x89D2;"></a>
 
 border-radius属性，允许我们为元素设置圆角效果。
 

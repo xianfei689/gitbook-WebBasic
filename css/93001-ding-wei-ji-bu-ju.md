@@ -1,18 +1,18 @@
-## 定位及布局 {#定位及布局}
+# 9、定位及布局
 
-### 信息流 {#信息流}
+## 信息流 <a id="&#x4FE1;&#x606F;&#x6D41;"></a>
 
 浏览器在呈现信息时会按照元素的类型进行处理，它将块元素从上到下显示（块元素与块元素之间另起一行），将行内元素按语言方向水平显示（如汉字、英语是从左到右，维吾尔语、阿拉伯语等有些语言是从右到左），行内元素直到到达容器边缘时才换行显示，这种显示元素的方式叫做页面的正常流。
 
 常见的大多数元素属于块元素，如p、table、div、li、ul、ol、object、h1-h6等等，行内元素有a、span、img、b、strong等等。需要注意的是，匿名内容（即没有使用元素标签标注的内容）也按行内元素处理。
 
-### display {#display}
+## display <a id="display"></a>
 
 元素如何显示，可以通过display属性进行指定。每一个元素都有一个默认的display属性，但这个属性值可以修改。块元素和行内元素可通过display属性改变它们的显示方式，比如在某些情景，编辑人员需要给行内元素添加高度，以改进元素的显示效果，行内元素是无法直接通过width属性指定高度的，但可以通过display属性将其变为块元素，再为其添加高度。
 
 display有很多属性值，最常用的是block、inline、inline-block以及none。其中block将元素按照块元素方式显示；inline将元素按照行内元素显示；而inline-block模式将使元素像行内元素那样显示，但同时又具有bolock元素的特征，可以赋予宽度和高度等等；none模式将元素整体隐藏起来，相当于该元素不存在一样，元素一旦声明其display的值为none，包含在内部的内容及其后代元素都会隐藏，并且其内容和后代不能再通过display改变显示方式。
 
-### 浮动 {#浮动}
+## 浮动 <a id="&#x6D6E;&#x52A8;"></a>
 
 除了相对定位和绝对定位能控制元素在正常流的位置之外，CSS还提供了浮动（float）机制来控制元素在正常流中的位置，在实际工作中，float属性是主要的定位、排版手段。从页面栏目的划分到图片的定位，大都通过float属性实现。
 
@@ -65,7 +65,7 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 
 这段代码的显示效果如下：
 
-![](https://yangjh.gitee.io/front-end/images/beforefloat.jpg "浮动前")
+![&#x6D6E;&#x52A8;&#x524D;](https://yangjh.gitee.io/front-end/images/beforefloat.jpg)
 
 下面，我们为left和right添加浮动属性。float属性有三个值：none（不浮动）、left（左浮动）、right（右浮动），其中none是默认值。盒元素必须为其指定明确的宽度值，才能应用浮动属性。
 
@@ -87,7 +87,7 @@ display有很多属性值，最常用的是block、inline、inline-block以及no
 
 显示效果如下：
 
-![](https://yangjh.gitee.io/front-end/images/float.jpg "浮动")
+![&#x6D6E;&#x52A8;](https://yangjh.gitee.io/front-end/images/float.jpg)
 
 我们看到id为right的div元素现在和id为left的div元素在同一水平位置上显示，并非另起一行。浮动的方向是针对使用了浮动元素的位置而言的，并不应用于其后的元素。另外一定要注意，如果一个元素没有宽度大小，则不能指定浮动效果。
 
@@ -145,11 +145,11 @@ alt="王旭明：如何避免校车惨剧一再发生" title="王旭明：如何
 
 在这个例子中，我们看到了浮动的特点，首先，类名为img\_area的div元素声明了左浮动的规则，这样，这个div元素就改变了它默认的块元素显示方式，而是尽可能得向父元素（类名为item的div元素）的左上角靠齐，并且，它右侧的空间将会被后续的元素所填充，因此，尽管类名为text\_area的div元素没有声明浮动，但它还是占据了类名为img\_area元素的右侧空间。这样，我们就达到了图文混编的效果。
 
-### 清除浮动 {#清除浮动}
+## 清除浮动 <a id="&#x6E05;&#x9664;&#x6D6E;&#x52A8;"></a>
 
 从上面的例子中，我们清楚地看到，使用了浮动属性的元素将会影响到其后的内容。这种影响有时候是我们期望的，有时候是我们所不乐见的。如下图所示：
 
-![](https://yangjh.gitee.io/front-end/images/beforeclear.jpg "清除浮动前")
+![&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x524D;](https://yangjh.gitee.io/front-end/images/beforeclear.jpg)
 
 图中的HTML及CSS如下：
 
@@ -201,7 +201,7 @@ body {
 
 clear的值有left、right、both和none，其中left表示清除左浮动，right表示清除右浮动，both表示清除左、右两侧的浮动影响，而none表示不清除浮动。
 
-![](https://yangjh.gitee.io/front-end/images/clear.jpg "清除浮动")
+![&#x6E05;&#x9664;&#x6D6E;&#x52A8;](https://yangjh.gitee.io/front-end/images/clear.jpg)
 
 上图中的HTML和CSS如下：
 
@@ -277,23 +277,36 @@ body {
 
 在CSS中，和定位相关的常用属性有position、top、right、bottom、left、z-index。通过这些属性，设计人员可以控制元素的精确定位。
 
-### position {#position}
+## position <a id="position"></a>
 
 position属性用来设定对象的定位方式。它的值有：
 
 1. **static**
+
    对象遵循常规流。top，right，bottom，left等属性不会被应用,static是position属性的默认值。
+
 2. **relative**
+
    对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left属性进行偏移时不影响常规流中的任何元素。
+
 3. **absolute**
+
    对象脱离常规流，使用top，right，bottom，left等属性进行绝对定位，盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。
+
 4. **fixed**
+
    对象脱离常规流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。
+
 5. **center**
+
    对象脱离常规流，使用top，right，bottom，left等属性指定盒子的位置或尺寸大小。盒子在其包含容器垂直水平居中。盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。（CSS3新增属性）
+
 6. **page**
+
    盒子的位置计算参照absolute。盒子在分页媒体或者区域块内，盒子的包含块始终是初始包含块，否则取决于每个absolute模式。（CSS3新增属性）
+
 7. **sticky**
+
    对象在常态时遵循常规流。它就像是 relative 和 fixed 的合体，当在屏幕中时按常规流排版，当卷动到屏幕外时则表现如fixed。该属性的表现是现实中你见到的吸附效果。（CSS3新增属性）
 
 其中relative和absolute方式使用较多，它们的区别可从下面的例子中看出：
@@ -365,7 +378,7 @@ position属性用来设定对象的定位方式。它的值有：
 
 上例的运行结果如下图所示：
 
-![](https://yangjh.gitee.io/front-end/images/position.png "不同定位方式的区别")
+![&#x4E0D;&#x540C;&#x5B9A;&#x4F4D;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;](https://yangjh.gitee.io/front-end/images/position.png)
 
 需要说明的是，absolute方式定位的坐标原点默认为body元素的坐标原点，在上例中，使用绝对定位的元素虽然包含在第三个div元素中，但计算它的位置时，还是从body元素的顶部开始。
 
@@ -441,9 +454,9 @@ position属性用来设定对象的定位方式。它的值有：
 
 上例的运行结果见：
 
-![](https://yangjh.gitee.io/front-end/images/absolute.png "绝对定位的参照原点")
+![&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x7684;&#x53C2;&#x7167;&#x539F;&#x70B9;](https://yangjh.gitee.io/front-end/images/absolute.png)
 
-### top、right、bottom、left {#top、right、bottom、left}
+## top、right、bottom、left <a id="top&#x3001;right&#x3001;bottom&#x3001;left"></a>
 
 top、right、bottom、left属性用来设置对象参照相对物顶边界向下、向左、向上、向右偏移的位置，这四个属性的值可以是正值，也可以是负值，可以是整数，也可以是百分比。必须定义position属性值为 relative 、absolute 、 fixed 、 center 、 page，此属性方可生效。
 
@@ -454,9 +467,9 @@ bottom:100px;
 left:0;
 ```
 
-### clip {#clip}
+## clip <a id="clip"></a>
 
-### z-index {#z-index}
+## z-index <a id="z-index"></a>
 
 z-index属性用来设置对象的层叠顺序。同一个层叠上下文中，层叠级别（即z-index属性值）大的显示在上面，反之显示在下面。该属性对定义了position为 relative 、 absolute 、 fixed 、 center 、 page 、 sticky 的元素有效，如果只设定z-index属性，但不使用position属性，则z-index属性无效。例如：
 
@@ -528,9 +541,9 @@ z-index属性用来设置对象的层叠顺序。同一个层叠上下文中，�
 
 上例中虽然为div.index4设定了z-index的值，但从运行效果（如下图所示）来看，这个z-index值显然没有起作用。
 
-![](https://yangjh.gitee.io/front-end/images/z-index.png "z-index属性演示")
+![z-index&#x5C5E;&#x6027;&#x6F14;&#x793A;](https://yangjh.gitee.io/front-end/images/z-index.png)
 
-### CSS中的居中 {#css中的居中}
+## CSS中的居中 <a id="css&#x4E2D;&#x7684;&#x5C45;&#x4E2D;"></a>
 
 前面已经介绍，文字水平居中的方法为：
 
@@ -636,8 +649,5 @@ margin:0 auto;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 ```
-
-
 

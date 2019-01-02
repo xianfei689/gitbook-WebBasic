@@ -1,10 +1,10 @@
-# 编辑相关元素 {#编辑相关元素}
+# 7、编辑相关元素
 
-## ins {#ins}
+## ins <a id="ins"></a>
 
 Ins 元素表示文档的追加内容。datetime属性用来说明追加内容的时间。
 
-## del {#del}
+## del <a id="del"></a>
 
 Del 元素表示文档中的移除内容。datetime属性用来说明移除内容的时间。
 
@@ -17,6 +17,4 @@ Del 元素表示文档中的移除内容。datetime属性用来说明移除内�
  <li>Buy a printer</li>
 </ul>
 ```
-
-
 

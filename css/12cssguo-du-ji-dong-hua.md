@@ -1,10 +1,10 @@
-## CSS过渡及动画 {#css过渡及动画}
+# 12、CSS过渡及动画
 
 CSS3的一个革新之处，是可以实现过渡及动画，前端开发人员现在可以不借助于Flash或者JavaScript，仅通过HTML和CSS就实现动画效果。
 
 借助于CSS3的过渡，我们可以在特定事件发生时，改变元素的外观。CSS3动画还可以设定多个关键帧。这样实现不同状态之间的变化。
 
-### 过渡 {#过渡}
+## 过渡 <a id="&#x8FC7;&#x6E21;"></a>
 
 若要过渡生效，元素必须在状态上有所改变，并且为不同的状态分配两个不同的样式。最简单的改变状态的方式就是使用:hover、 :focus、 :active和 :target 伪类。 和过渡相关的属性有四个，分别是transition-property、transition-duration、transition-timing-function和 transition-delay。创建一个过渡，并不需要以上四个属性，前三个是使用得最多的。
 
@@ -24,7 +24,7 @@ CSS3的一个革新之处，是可以实现过渡及动画，前端开发人员�
 
 上述例子中，当鼠标移动到矩形之上时，矩形的背景色会在1秒之内发生变化。
 
-#### 过渡属性 {#过渡属性}
+### 过渡属性 <a id="&#x8FC7;&#x6E21;&#x5C5E;&#x6027;"></a>
 
 transition-property 属性决定元素的哪些属性会发生过渡变化。默认情况下，不同状态之间的所有不同值得属性都会有过渡变化效果。但我们可以通过transition-property属性来具体指定需要有过渡效果的属性。比如，上述的例子中，我们指定了背景background作为唯一的过渡效果属性。
 
@@ -83,7 +83,7 @@ transition-property 属性决定元素的哪些属性会发生过渡变化。默
 33. word-spacing
 34. z-index
 
-### 过渡效果持续时间 {#过渡效果持续时间}
+## 过渡效果持续时间 <a id="&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x6301;&#x7EED;&#x65F6;&#x95F4;"></a>
 
 Transition-duration属性用来指定过渡效果的持续时间，其单位可以是秒s，也可是毫秒ms，既可以整数，也可以是小数。
 
@@ -105,7 +105,7 @@ Transition-duration属性用来指定过渡效果的持续时间，其单位可�
 
 上例中，背景色的过渡会在0.2秒之内完成，而圆角效果的过渡会在1秒之内完成。
 
-### 过渡的缓动效果设置 {#过渡的缓动效果设置}
+## 过渡的缓动效果设置 <a id="&#x8FC7;&#x6E21;&#x7684;&#x7F13;&#x52A8;&#x6548;&#x679C;&#x8BBE;&#x7F6E;"></a>
 
 Transition-timing-function 属性用来设定过渡效果的变化速度。主要值有：linear、 ease-in、 ease-out 和 ease-in-out。
 
@@ -113,11 +113,11 @@ linear值表示变化的时候以恒定的速度进行过渡。ease-in表示过�
 
 当有多个过渡属性时，我们可以分别其指定过渡速度设置，也是用逗号隔开。
 
-### 过渡效果的延迟设置 {#过渡效果的延迟设置}
+## 过渡效果的延迟设置 <a id="&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x7684;&#x5EF6;&#x8FDF;&#x8BBE;&#x7F6E;"></a>
 
 transition-delay属性用来指定过渡效果在多久之后发生，其单位也是时间单位。这一属性的用法和上述属性类似，不再赘述。
 
-### 过渡效果的简写 {#过渡效果的简写}
+## 过渡效果的简写 <a id="&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x7684;&#x7B80;&#x5199;"></a>
 
 过渡效果的设置，和背景、字体等属性一样，也可以简写，使用transition属性，依次设置transition-property、 transition-duration、 transition-timing-function以及transition-delay。不同的属性时间用空格隔开，多个过渡效果之间用逗号隔开。例如：
 
@@ -135,7 +135,7 @@ transition-delay属性用来指定过渡效果在多久之后发生，其单位�
 
 上例中，背景色在0.2秒之内匀速过渡，而圆角效果在1秒之后，先慢后快地在1秒内完成过渡。
 
-### 变形和过渡的结合 {#变形和过渡的结合}
+## 变形和过渡的结合 <a id="&#x53D8;&#x5F62;&#x548C;&#x8FC7;&#x6E21;&#x7684;&#x7ED3;&#x5408;"></a>
 
 下面，我们将变形和过渡结合起来，实现图片翻转的动画效果。其中，HTML部分：
 
@@ -193,11 +193,11 @@ CSS部分：
 
 其中用到了绝对定位，使得图片和文字处于相同容器的相同位置，而图片背部的描述文字，通过绕Y轴旋转180度后，再旋转过来之后，就实现文字的正常显示。
 
-### 动画 {#动画}
+## 动画 <a id="&#x52A8;&#x753B;"></a>
 
 过渡最适合构建那些状态有变化的动画，而要做更加复杂的动画，最好的选择是使用animation属性。
 
-#### 关键帧 {#关键帧}
+### 关键帧 <a id="&#x5173;&#x952E;&#x5E27;"></a>
 
 为了设定动画过程，需要使用@keyframes 指定关键帧，@keyframes 的规则包含动画名称、动画断点以及产生变化的属性。例如：
 
@@ -220,7 +220,7 @@ CSS部分：
 
 上例中，动画名称为slide，有三个关键帧断点，使用定位关键词产生位置上的变化。还可以使用关键词from to 表示0\%和100\%。
 
-#### 动画名称 {#动画名称}
+### 动画名称 <a id="&#x52A8;&#x753B;&#x540D;&#x79F0;"></a>
 
 使用keyframes指定关键帧时，需要命名动画名称\(animation-name\)，该名称将在元素声明动画（animation）属性时使用。例如：
 
@@ -230,7 +230,7 @@ CSS部分：
 }
 ```
 
-#### 动画持续时间、缓动效果及延迟 {#动画持续时间、缓动效果及延迟}
+### 动画持续时间、缓动效果及延迟 <a id="&#x52A8;&#x753B;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x3001;&#x7F13;&#x52A8;&#x6548;&#x679C;&#x53CA;&#x5EF6;&#x8FDF;"></a>
 
 和过渡属性类似，动画属性也有持续时间（animation-duration）、缓动效果（animation-timing-function）及延迟属性（animation-delay）。例如：
 
@@ -243,30 +243,30 @@ CSS部分：
 }
 ```
 
-#### 动画重复次数 {#动画重复次数}
+### 动画重复次数 <a id="&#x52A8;&#x753B;&#x91CD;&#x590D;&#x6B21;&#x6570;"></a>
 
 默认情况下，动画只执行一次，我们可以通过animation-iteration-count属性指定重复次数，其值可以是整数，还可以是infinite关键字，使用infinite关键字后，动画效果将无限循环。
 
-#### 动画方向 {#动画方向}
+### 动画方向 <a id="&#x52A8;&#x753B;&#x65B9;&#x5411;"></a>
 
 动画运行的方向，可以通过nimation-direction属性来指定，其值有normal, reverse, alternate 和 alternate-reverse。
 
-1. **normal  **0-&gt;100；
-2. **reverse  **100-&gt;0；
-3. **alternate  **0-&gt;100-&gt;0；
-4. **alternate-reverse  **100-&gt;0-&gt;100；
+1. **normal**  0-&gt;100；
+2. **reverse**  100-&gt;0；
+3. **alternate**  0-&gt;100-&gt;0；
+4. **alternate-reverse**  100-&gt;0-&gt;100；
 
 其中，后两个值，需要和动画重复次数配合使用。
 
-#### 动画运行状态 {#动画运行状态}
+### 动画运行状态 <a id="&#x52A8;&#x753B;&#x8FD0;&#x884C;&#x72B6;&#x6001;"></a>
 
 通过animation-play-state可以在动画运行过程中暂停，默认值为running，即不暂停，若其值为paused，则点击动画元素，可暂停其动画。
 
-#### 动画填充模式 {#动画填充模式}
+### 动画填充模式 <a id="&#x52A8;&#x753B;&#x586B;&#x5145;&#x6A21;&#x5F0F;"></a>
 
 动画填充模式（animation-fill-mode）指定元素在动画执行之前、之后或者前后的状态，其值为none, forwards, backwards 和 both。
 
-#### 动画属性简写 {#动画属性简写}
+### 动画属性简写 <a id="&#x52A8;&#x753B;&#x5C5E;&#x6027;&#x7B80;&#x5199;"></a>
 
 和过渡属性类似，动画属性也可以简写，顺序为animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, 最后为 animation-play-state。例如：
 
@@ -276,7 +276,7 @@ CSS部分：
 }
 ```
 
-### 动画库animate.css的使用 {#动画库animatecss的使用}
+## 动画库animate.css的使用 <a id="&#x52A8;&#x753B;&#x5E93;animatecss&#x7684;&#x4F7F;&#x7528;"></a>
 
 在实际工作中，动画效果的调试是个非常繁琐的工作，因此，涌现出一批CSS的动画库，其中[animate.css](http://daneden.github.io/animate.css/)由于动画效果丰富，因此使用较多。
 

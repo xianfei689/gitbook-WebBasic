@@ -1,20 +1,20 @@
-# Javascript中的表达式和运算符 {#javascript中的表达式和运算符}
+# 3、运算符
 
 表达式和运算符是编程语言的基本规则，必须熟练掌握。以下是JavaScript语言的全部（除废弃之外）的表达式和运算符：
 
-## 主要表达式 {#主要表达式}
+## 主要表达式 <a id="&#x4E3B;&#x8981;&#x8868;&#x8FBE;&#x5F0F;"></a>
 
 首先，我们看 JavaScript 中基本关键字和常用表达式：
 
-### `this` {#this}
+### `this` <a id="this"></a>
 
 `this`关键字指向函数的执行上下文。函数的`this`关键字在 JavaScript 中的表现略有不同，此外，在严格模式和非严格模式之间也会有一些差别。在绝大多数情况下，函数的调用方式决定了`this`的值。`this`不能在执行期间被赋值，并且在每次函数被调用时this的值也可能会不同。
 
-#### 全局语境中的this {#全局语境中的this}
+#### 全局语境中的this <a id="&#x5168;&#x5C40;&#x8BED;&#x5883;&#x4E2D;&#x7684;this"></a>
 
 在全局执行上下文中（在任何函数体外部）this 都指代全局对象。
 
-```
+```javascript
 <script>
 "use strice";
 console.log(this);
@@ -22,11 +22,11 @@ console.log(this === window);
 </script>
 ```
 
-#### 函数语境中的this {#函数语境中的this}
+#### 函数语境中的this <a id="&#x51FD;&#x6570;&#x8BED;&#x5883;&#x4E2D;&#x7684;this"></a>
 
 在函数内部，this的值取决于函数被调用的方式。在严格模式下，this将保持他进入执行上下文时的值，所以下面的this将会默认为undefined。
 
-```
+```javascript
 <script>
 function f1() {
     return this;
@@ -42,11 +42,11 @@ console.log(window.f2());
 </script>
 ```
 
-### function {#function}
+### function <a id="function"></a>
 
 function 关键字定义了函数表达式。使用表达式方式定义函数的语法如下：
 
-```
+```javascript
 let function_expression = function [name]([param1[, param2[, ..., paramN]]]) {
    statements
 };
@@ -54,11 +54,11 @@ let function_expression = function [name]([param1[, param2[, ..., paramN]]]) {
 
 使用表达式创建的函数，不能在创建之前调用。
 
-### class {#class}
+### class <a id="class"></a>
 
 class 关键字定义了类表达式。
 
-```
+```javascript
 const MyClass = class [className] [extends] {
   // class body
 };
@@ -66,7 +66,7 @@ const MyClass = class [className] [extends] {
 
 和函数表达式相同的一点是，类表达式可以是命名也可以是匿名的。如果是命名类表达式，这个名字只能在类体内部才能访问到。
 
-```
+```javascript
 const Foo = class NamedFoo {
   constructor() {}
   whoIsThere() {
@@ -86,11 +86,11 @@ Foo.name;
 // "NamedFoo"
 ```
 
-### function\* {#function}
+### function\* <a id="function"></a>
 
 function\* 关键字在表达式内部定义一个生成器函数。
 
-```
+```javascript
 function* [name]([param1[, param2[, ..., paramN]]]) {
    statements
 }
@@ -102,11 +102,11 @@ function* [name]([param1[, param2[, ..., paramN]]]) {
 2. Generator.prototype.return\(\) 返回给定的值并结束生成器。
 3. Generator.prototype.throw\(\) 向生成器抛出一个错误。
 
-### yield {#yield}
+### yield <a id="yield"></a>
 
 暂停和恢复一个生成器函数。yield关键字使生成器函数执行暂停，yield关键字后面的表达式的值返回给生成器的调用者。它可以被认为是一个基于生成器的版本的return关键字。示例如下：
 
-```
+```javascript
 function* countAppleSales () {
   var saleList = [3, 7, 5];
   for (var i = 0; i < saleList.length; i++) {
@@ -121,11 +121,11 @@ console.log(appleStore.next()); // { value: 5, done: false }
 console.log(appleStore.next()); // { value: undefined, done: true }
 ```
 
-### yield\* {#yield}
+### yield\* <a id="yield"></a>
 
 委派给另外一个generator函数或可迭代的对象。示例如下：
 
-```
+```javascript
 function* g1() {
   yield 2;
   yield 3;
@@ -148,11 +148,11 @@ console.log(iterator.next()); // { value: 5, done: false }
 console.log(iterator.next()); // { value: undefined, done: true }
 ```
 
-### async function\* {#async-function}
+### async function\* <a id="async-function"></a>
 
 async function 定义一个异步函数表达式。
 
-### await {#await}
+### await <a id="await"></a>
 
 暂停或恢复执行异步函数，并等待promise的resolve/reject回调。
 
@@ -160,7 +160,7 @@ async function 定义一个异步函数表达式。
 
 数组初始化/字面量语法。
 
-```
+```javascript
 var fruits = ['Apple', 'Banana'];
 
 console.log(fruits.length);
@@ -178,7 +178,7 @@ var last = fruits[fruits.length - 1];
 
 对象初始化/字面量语法。一个对象初始化器，由花括号/大括号 \({}\) 包含的一个由零个或多个对象属性名和其关联值组成的一个逗号分隔的列表构成。
 
-```
+```javascript
 var o = {};
 var o = {a: 'foo', b: 42, c: {}};
 
@@ -192,7 +192,7 @@ var o = {
 };
 ```
 
-### /ab+c/i {#abci}
+### /ab+c/i <a id="abci"></a>
 
 正则表达式字面量语法。
 
@@ -200,7 +200,7 @@ var o = {
 
 分组操作符。圆括号运算符由一对圆括号组成，包裹表达式和子表达式用来覆盖常规的，运算符优先级 ，达到低优先级的表达式比高优先级的表达式更早运算。
 
-```
+```javascript
 var a = 1;
 var b = 2;
 var c = 3;
@@ -210,31 +210,31 @@ a + (b * c)   // 7
 (a + b) * c   // 9
 ```
 
-## 左表达式 {#左表达式}
+## 左表达式 <a id="&#x5DE6;&#x8868;&#x8FBE;&#x5F0F;"></a>
 
 左边的值是赋值的目标。
 
-### 属性访问符 {#属性访问符}
+### 属性访问符 <a id="&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x7B26;"></a>
 
 成员运算符提供了对对象的属性或方法的访问 \(object.property 和 object\["property"\]\).
 
-### new {#new}
+### new <a id="new"></a>
 
 new 运算符创建了构造函数实例。
 
-### new.target {#newtarget}
+### new.target <a id="newtarget"></a>
 
 在构造器中，new.target 指向new调用的构造器。
 
-### super {#super}
+### super <a id="super"></a>
 
 super 关键字调用父类的构造器.
 
-### ...obj {#obj}
+### ...obj <a id="obj"></a>
 
 展开运算符可以将一个可迭代的对象在函数调用的位置展开成为多个参数,或者在数组字面量中展开成多个数组元素。
 
-## 自增和自减 {#自增和自减}
+## 自增和自减 <a id="&#x81EA;&#x589E;&#x548C;&#x81EA;&#x51CF;"></a>
 
 | 运算符 | 意义 |
 | :--- | :--- |
@@ -243,7 +243,7 @@ super 关键字调用父类的构造器.
 | ++A | 前置自增运算符 |
 | A++ | 前置自减运算符 |
 
-## 一元运算符 {#一元运算符}
+## 一元运算符 <a id="&#x4E00;&#x5143;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 | 运算符 | 意义 |
 | :--- | :--- |
@@ -255,11 +255,11 @@ super 关键字调用父类的构造器.
 | ~ | 按位非运算符. |
 | ! | 逻辑非运算符. |
 
-### 一元正号 {#一元正号}
+### 一元正号 <a id="&#x4E00;&#x5143;&#x6B63;&#x53F7;"></a>
 
 一元正号运算符位于其操作数前面，计算其操作数的数值，如果操作数不是一个数值，会尝试将其转换成一个数值。 尽管一元负号也能转换非数值类型，但是一元正号是转换其他对象到数值的最快方法，也是最推荐的做法，因为它不会对数值执行任何多余操作。它可以将字符串转换成整数和浮点数形式，也可以转换非字符串值 true，false 和 null。小数和十六进制格式字符串也可以转换成数值。负数形式字符串也可以转换成数值（对于十六进制不适用）。如果它不能解析一个值，则计算结果为 NaN.
 
-```
+```javascript
 +3     // 3
 +"3"   // 3
 +true  // 1
@@ -268,11 +268,11 @@ super 关键字调用父类的构造器.
 +function(val){ return val;} //NaN
 ```
 
-## 算术运算符 {#算术运算符}
+## 算术运算符 <a id="&#x7B97;&#x672F;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 算术运算符能对操作数进行运算，返回一个数值型的值。常见的有`+、-、 *、/、%`。
 
-## 关系运算符 {#关系运算符}
+## 关系运算符 <a id="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 关系运算符通常用于检查两个操作数之间的关系，返回值为true或false。
 
@@ -285,7 +285,7 @@ super 关键字调用父类的构造器.
 | &gt;= | 是否大于等于 | 5&gt;=8 | FALSE |
 | &lt;= | 是否小于等于 | 5&lt;=8 | TRUE |
 
-## 相等运算符 {#相等运算符}
+## 相等运算符 <a id="&#x76F8;&#x7B49;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 如果相等，操作符返回的是Boolean\(布尔\)类型的true，否则是false。
 
@@ -296,7 +296,7 @@ super 关键字调用父类的构造器.
 | ！= | 是否不等 | 5！="5" | FALSE |
 | !== | 是否不全等 | 5！="5" | TRUE |
 
-## 位移运算符 {#位移运算符}
+## 位移运算符 <a id="&#x4F4D;&#x79FB;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 在二进制的基础上对数字进行移动操作。
 
@@ -306,7 +306,7 @@ super 关键字调用父类的构造器.
 | &gt;&gt; | 按位右移运算符。 |
 | &gt;&gt;&gt; | 按位无符号右移运算符。 |
 
-## 二进制位运算符 {#二进制位运算符}
+## 二进制位运算符 <a id="&#x4E8C;&#x8FDB;&#x5236;&#x4F4D;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 | 运算符 | 意义 |
 | :--- | :--- |
@@ -314,7 +314,7 @@ super 关键字调用父类的构造器.
 | \| | 二进制位或（OR）。 |
 | ^ | 二进制位异或（XOR）。 |
 
-## 二元逻辑运算符 {#二元逻辑运算符}
+## 二元逻辑运算符 <a id="&#x4E8C;&#x5143;&#x903B;&#x8F91;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 逻辑运算符用来判断操作数之间的逻辑关系，返回值为true和false。javascript支持一下三种逻辑运算符。
 
@@ -324,18 +324,15 @@ super 关键字调用父类的构造器.
 | \|\| | 逻辑或 | 5&gt;3 \|\| 3&gt;5 | FALSE |
 | ! | 逻辑非 | !\(3&gt;5\) | TRUE |
 
-## 条件\(三元\)运算符 {#条件三元运算符}
+## 条件\(三元\)运算符 <a id="&#x6761;&#x4EF6;&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 `(condition ? ifTrue : ifFalse)`条件元素运算符把两个结果中其中一个符合运算逻辑的值返回。
 
-## 赋值运算符 {#赋值运算符}
+## 赋值运算符 <a id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7B26;"></a>
 
 赋值运算符是使用最多的运算符，常见的赋值运算符就是“=”，它将右边的值赋与等号左边的变量。
 
-## 逗号操作符 {#逗号操作符}
+## 逗号操作符 <a id="&#x9017;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;"></a>
 
 当你想要在期望一个表达式的位置包含多个表达式时，可以使用逗号操作符。这个操作符最常用的一种情况是：for 循环中提供多个参数。
-
-  
-
 

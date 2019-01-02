@@ -1,6 +1,6 @@
-# 表单元素 {#表单元素}
+# 10、表单元素
 
-## form {#form}
+## form <a id="form"></a>
 
 Form元素用来标记一组和表单相关的元素，如文本框、提交按钮等等内容，是服务器和用户进行交互的最重要元素。
 
@@ -12,7 +12,7 @@ form 元素最重要的两个属性是action和method，分别对应表单提交
 </form>
 ```
 
-## lable {#lable}
+## lable <a id="lable"></a>
 
 Label 元素用来标记表单交互元素的标签，是一个辅助说明性的元素，label元素往往对应特定的元素。
 
@@ -20,7 +20,7 @@ Label 元素用来标记表单交互元素的标签，是一个辅助说明性�
 <p><label>年龄: <input name=age type=number min=0></label></p>
 ```
 
-## input {#input}
+## input <a id="input"></a>
 
 Input 元素通过type属性，可生成各种交互元素，如文本框、密码框、按钮等等。
 
@@ -56,11 +56,11 @@ Input 元素的用法示例如下：
 </datalist>
 ```
 
-## button {#button}
+## button <a id="button"></a>
 
 Button 元素生成一个按钮，可通过type属性控制按钮类型。type的值有reset、submit和button，分别对应重置按钮、提交按钮和普通按钮。
 
-## select {#select}
+## select <a id="select"></a>
 
 Select 元素生成一个下拉菜单控制器，菜单列表由option构成。
 
@@ -75,7 +75,7 @@ Select 元素生成一个下拉菜单控制器，菜单列表由option构成。
  </select>
 ```
 
-## datalist {#datalist}
+## datalist <a id="datalist"></a>
 
 Datalist 可为指定的表单元素，如文本框，生成一个数据列表，方便用户直接选择。
 
@@ -90,7 +90,7 @@ Datalist 可为指定的表单元素，如文本框，生成一个数据列表�
 </label>
 ```
 
-## optgroup {#optgroup}
+## optgroup <a id="optgroup"></a>
 
 Optgroup 元素结合select元素使用，将生成列表分组。例如：
 
@@ -117,11 +117,11 @@ Optgroup 元素结合select元素使用，将生成列表分组。例如：
 </form>
 ```
 
-## option {#option}
+## option <a id="option"></a>
 
 Option元素为select、optgroup、datalist元素生成列表项目。
 
-## textarea {#textarea}
+## textarea <a id="textarea"></a>
 
 Textarea 元素表示能输入多段文字的文本框。
 
@@ -129,7 +129,7 @@ Textarea 元素表示能输入多段文字的文本框。
 <p>如果您有任何意见，烦请告知我们： <textarea cols=80 name=comments></textarea></p>
 ```
 
-## keygen {#keygen}
+## keygen <a id="keygen"></a>
 
 Keygen 元素表示密钥生成器，当表单提交时，一个密钥将被提交到服务器。
 
@@ -140,7 +140,7 @@ Keygen 元素表示密钥生成器，当表单提交时，一个密钥将被提�
 </form>
 ```
 
-## output {#output}
+## output <a id="output"></a>
 
 Output 元素表示计算结果或者用户交互的结果。
 
@@ -152,7 +152,7 @@ Output 元素表示计算结果或者用户交互的结果。
     </form>
 ```
 
-## progress {#progress}
+## progress <a id="progress"></a>
 
 Progress 元素表示进度条。
 
@@ -176,7 +176,7 @@ Progress 元素表示进度条。
 
 上述代码将生成一个进度为50\%的进度条。
 
-## meter {#meter}
+## meter <a id="meter"></a>
 
 Meter 元素表示在一定范围内的图形化比值。
 
@@ -184,7 +184,7 @@ Meter 元素表示在一定范围内的图形化比值。
 <meter min=0 max=20 value=12>12cm</meter>
 ```
 
-## filedset {#filedset}
+## filedset <a id="filedset"></a>
 
 Filedset 元素表示表单中的一组表单元素集合。
 
@@ -198,7 +198,7 @@ Filedset 元素表示表单中的一组表单元素集合。
  </fieldset>
 ```
 
-## legend {#legend}
+## legend <a id="legend"></a>
 
 Legend 元素在fieldset元素使用，表示fieldset的标题。
 

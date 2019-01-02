@@ -1,8 +1,8 @@
-## 背景 {#背景}
+# 7、CSS背景属性
 
 CSS中提供了为元素设定背景的功能，我们看到许多设计精良的网页，在很大程度上是灵活运用CSS背景实现装饰效果的。在CSS中，不但可以为整个网页设定背景，也可为具体元素设定背景，任何可显示出来的元素都可以设定背景样式。
 
-### 设置背景色 {#设置背景色}
+## 设置背景色 <a id="&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x8272;"></a>
 
 CSS通过background-color属性为元素设定背景颜色，颜色值的设定同color属性。background-color属性的默认值为transparent（透明）。如下例中的规则将使段落中的内容颜色为黑色，段落的整体背景色为浅灰色。
 
@@ -13,23 +13,29 @@ p {
 }
 ```
 
-### 设置背景图片 {#设置背景图片}
+## 设置背景图片 <a id="&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;"></a>
 
 一般情况下，我们会认为色块过于单调，缺少变化，因此，我们可以使用CSS提供的图像背景来装饰页面。在CSS中和图像背景有关的属性有：
 
 1. **background-image**
+
    用来指定作为背景使用的图片所在的地址，它的值为URL地址或者渐变色，默认值为none。此外，当同时定义了背景颜色和背景图像时，背景图像覆盖在背景颜色之上。
+
 2. **background-repeat**
+
    来设定背景图片的重复方式，background-repeat的值有：repeat（沿水平和垂直方向平铺）、repeat-x（沿水平方向平铺）、repeat-y（沿垂直方向平铺）或者no-repeat（不平铺显示），默认值为repeat。
+
 3. **background-position**
+
    用来设定背景图像的位置，位置信息有两个，第一个用来指定横向坐标，第二个用来指定纵向坐标。坐标的表示可以使用百分数、带单位的长度以及关键字（left、center、right、top、middle、bottom），默认值为0。
+
 4. **background-attachment**
+
    用来设定背景图像的滚动模式。值有三个，其中scroll表示背景图像会随着页面窗口滚动；fix表示固定在窗口，不随其滚动；local表示元素随元素滚动时背景图像也会跟着滚动，因为背景图像总是要跟着内容。local值是CSS3新增的值。background-attachment默认值为scroll。
 
 例如：
 
 ```css
-
 div#footer {
     background-image: url(bg.png);
     background-repeat: no-repeat;
@@ -42,24 +48,23 @@ div#footer {
 
 其中，background-position 属性，可以使用top、right、bottom、left和center关键字以及像素、百分比或者其他长度单位。CSS 在定位时，坐标原点位于左上角，如下图所示：
 
-![](https://yangjh.gitee.io/front-end/images/background-position.png "background坐标体系")
+![background&#x5750;&#x6807;&#x4F53;&#x7CFB;](https://yangjh.gitee.io/front-end/images/background-position.png)
 
 通常情况下，我们将background-color、 background-image、 background-position、和 background-repeat 属性简写到background属性中。简写时，属性的顺序有多种，普遍采用 background-color、 background-image、 background-position、和 background-repeat的顺序。 例如：
 
 ```css
-
 div {
   background: #b2b2b2 url("alert.png") 20px 10px no-repeat;
 }
 ```
 
-### 设置线性渐变背景 {#设置线性渐变背景}
+## 设置线性渐变背景 <a id="&#x8BBE;&#x7F6E;&#x7EBF;&#x6027;&#x6E10;&#x53D8;&#x80CC;&#x666F;"></a>
 
 许多年以来，设计师和开发人员若要实现背景渐变效果，只能使用图像处理软件制作渐变背景图片。但在CSS3中，我们现在可以使用渐变背景属性来代替以往繁琐的做法，只需一条语句，就可以实现漂亮的渐变背景效果。
 
 CSS的线性渐变背景是在 background 或者 background-image 属性中使用linear-gradient\(\)函数实现，例如：
 
-```
+```text
 div {
   background: #466368;
   background: linear-gradient(#648880, #293f50);
@@ -73,7 +78,6 @@ linear-gradient\(\)函数必须包括至少两个值，第一个值为渐变起�
 默认情况下，线性渐变的方向为从上至下，我们可以在颜色值之前，使用关键词或者角度来改变渐变的方向。例如：
 
 ```css
-
 div {
   background: #466368;
   background: linear-gradient(to right bottom, #648880, #293f50);
@@ -84,7 +88,7 @@ div {
 
 除了使用关键字之外，还可以使用角度，例如，如果我们想要生成和上例类似的渐变填充，可以使用135deg调整渐变角度：
 
-```
+```text
 .deg {
     background: #466368;
     background: linear-gradient(135deg, black, white);
@@ -93,24 +97,22 @@ div {
 }
 ```
 
-### 设置径向渐变 {#设置径向渐变}
+## 设置径向渐变 <a id="&#x8BBE;&#x7F6E;&#x5F84;&#x5411;&#x6E10;&#x53D8;"></a>
 
 线性渐变非常适合从不同方向之间的渐变，不过有时候，我们还需要径向渐变。径向渐变使用radial-gradient\(\)，其他类似于线性渐变。例如：
 
 ```css
-
 div {
   background: #466368;
   background: radial-gradient(#648880, #293f50);
 }
 ```
 
-### 使用多个色标 {#使用多个色标}
+## 使用多个色标 <a id="&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x8272;&#x6807;"></a>
 
 要实现渐变效果，最少需要两个颜色值。但我们还可以使用多个色标，生成不同颜色值之间的渐变效果，不同颜色值会在指定的方向上平均分布，如：
 
 ```css
-
 div {
   background: #648880;
   background: linear-gradient(to right, #f6f1d3, #648880, #293f50);

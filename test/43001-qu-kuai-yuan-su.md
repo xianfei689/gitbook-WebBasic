@@ -1,6 +1,6 @@
-# 区块元素 {#区块元素}
+# 4、区块元素
 
-## 块元素与行内元素 {#块元素与行内元素}
+## 块元素与行内元素 <a id="&#x5757;&#x5143;&#x7D20;&#x4E0E;&#x884C;&#x5185;&#x5143;&#x7D20;"></a>
 
 绝大多数HTML元素是块元素（Block-level element）或者行内元素（Inline-level element）。这两者之间有什么不同？
 
@@ -8,15 +8,15 @@
 
 行内元素并不会开始于新的一行。它们按照字符的顺序依次再文档中显示，如从左到右，一个挨着一个，填满所在容器的宽度后才会换行。行内元素也可以嵌套使用，但是行内元素内部不能包含块元素。常见的行内元素有`<a>、<img>`等等。
 
-## 区块元素 {#区块元素}
+## 区块元素 <a id="&#x533A;&#x5757;&#x5143;&#x7D20;"></a>
 
-### body {#body}
+### body <a id="body"></a>
 
 Body元素用来标记全部文档内容。在HTML文档中，应该只能有一个body元素。
 
 body元素属于`Sectioning root`类型的元素，即它可以包含其他区块元素。
 
-### article {#article}
+### article <a id="article"></a>
 
 article元素表示网页中完整的信息，比如论坛中的帖子、报纸中的报道、博客文章、用户评论或者其他独立完整的内容。
 
@@ -34,7 +34,7 @@ article元素表示网页中完整的信息，比如论坛中的帖子、报纸�
 
 article元素属于`Sectioning content`类型。
 
-### section {#section}
+### section <a id="section"></a>
 
 section元素表示文档或者应用中一般意义上的分区，比如二级标题及段落的组合，就是一个分区。
 
@@ -75,7 +75,7 @@ section元素表示文档或者应用中一般意义上的分区，比如二级�
 
 section元素也属于`Sectioning content`类型。
 
-### nav {#nav}
+### nav <a id="nav"></a>
 
 nav元素用来表示一组连接到外部网页的链接，即导航条。
 
@@ -92,13 +92,13 @@ nav元素用来表示一组连接到外部网页的链接，即导航条。
 
 nav元素属于`Sectioning content`类型。
 
-### aside {#aside}
+### aside <a id="aside"></a>
 
 Aside 元素用来表示和当前文档内容相关的区块，比如广告、相关链接以及其他和当前文档相关的内容。
 
 aside元素属于`Sectioning content`类型。
 
-### h1,h2,...h6 {#h1h2h6}
+### h1,h2,...h6 <a id="h1h2h6"></a>
 
 这些元素用来标记对应区块的标题，其中h1为最高级别，h6为最低级别的子标题。 合理使用标题元素，也有利于搜索引擎对页面内容的理解。
 
@@ -108,11 +108,11 @@ aside元素属于`Sectioning content`类型。
 
 这些元素属于`Heading content`类型。
 
-### header {#header}
+### header <a id="header"></a>
 
 header元素不同于head元素，header用来标记文档的简介或者导航区域。
 
-### footer {#footer}
+### footer <a id="footer"></a>
 
 footer元素通常包括版权信息、相关文档、机构简介等等内容。
 

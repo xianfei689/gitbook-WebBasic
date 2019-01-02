@@ -1,15 +1,12 @@
+# XHTML
+
 ## XHTML 是什么？
 
 * XHTML 指可扩展超文本标签语言（EXtensible HyperText Markup Language）。
-
 * XHTML 的目标是取代 HTML。
-
 * XHTML 与 HTML 4.01 几乎是相同的。
-
 * XHTML 是更严格更纯净的 HTML 版本。
-
 * XHTML 是作为一种 XML 应用被重新定义的 HTML。
-
 * XHTML 是一个 W3C 标准。
 
 ## 为什么要使用XHTML？
@@ -18,7 +15,7 @@
 
 下面的 HTML 代码仍然可以工作得很好，即使它没有遵守 HTML 规则：
 
-```html
+```markup
 <html>
 <head>
 <title>This is bad HTML</title>
@@ -43,8 +40,6 @@ HTML 和 XML 各自的长处加以结合，我们得到了在现在和未来都�
 * XHTML 文档必须拥有根元素。
 
 ## 语法
-
----
 
 ## 更多的 XHTML 语法规则：
 

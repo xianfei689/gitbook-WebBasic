@@ -1,7 +1,5 @@
 # XHTML DTD
 
----
-
 **XHTML 定义了三种文件类型声明。**
 
 **使用最普遍的是 XHTML Transitional。**
@@ -70,6 +68,4 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 * STRICT（严格类型）
 * TRANSITIONAL（过渡类型）
 * FRAMESET（框架类型）
-
-
 

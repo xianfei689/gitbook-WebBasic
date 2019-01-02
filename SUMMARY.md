@@ -1,7 +1,7 @@
-# Summary
+# Table of contents
 
 * [Web 标准](README.md)
-* [HTML](test.md)
+* [HTML](test/README.md)
   * [1、HTML基础概念及规则](test/htmlji-chu-gai-nian-ji-gui-ze.md)
   * [2、文档根元素](test/23001-wen-dang-gen-yuan-su.md)
   * [3、文档元数据相关元素](test/33001-wen-dang-yuan-shu-ju-xiang-guan-yuan-su.md)
@@ -13,9 +13,9 @@
   * [9、表格元素](test/93001-biao-ge-yuan-su.md)
   * [10、表单元素](test/103001-biao-dan-yuan-su.md)
   * [11、脚本元素](test/113001-jiao-ben-yuan-su.md)
-* [XHTML](xhtml.md)
+* [XHTML](xhtml/README.md)
   * [XHTML DTD](xhtml/aa.md)
-* [CSS](css.md)
+* [CSS](css/README.md)
   * [1、使用样式表的三种方式](css/13001-shi-yong-yang-shi-biao-de-san-zhong-fang-shi.md)
   * [2、CSS语法与规则](css/2cssyu-fa-yu-gui-ze.md)
   * [3、CSS 选择符](css/3css-xuan-ze-fu.md)
@@ -29,7 +29,7 @@
   * [11、CSS变形](css/11cssbian-xing.md)
   * [12、CSS过渡及动画](css/12cssguo-du-ji-dong-hua.md)
   * [13、Flex 布局](css/13flex-bu-ju.md)
-* [JavaScript](javascript.md)
+* [JavaScript](javascript/README.md)
   * [1、js使用方式](javascript/1jsshi-yong.md)
   * [2、核心语法](javascript/23001-he-xin-yu-fa.md)
   * [3、运算符](javascript/33001-yun-suan-fu.md)

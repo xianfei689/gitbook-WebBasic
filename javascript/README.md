@@ -1,4 +1,4 @@
-# JavaScript {#javascript}
+# JavaScript
 
 JavaScript是一种脚本语言，所谓脚本实际上就是一段嵌入到其他文档中的程序，用来完成特定的功能。JavaScript脚本经常用来检验浏览器，相应用户动作、验证表单数据及实现动态特效等。在网站中，JavaScript扮演的角色逐渐增多，正在蚕食着原本由Flash所占据的领地，如新闻幻灯片、焦点图、事件时间线、新闻地图等等。在Web标准中，行为层的实现目前是以JavaScript脚本为主，可以这样说，JavaScript是事实上的浏览器端脚本。
 
@@ -6,9 +6,9 @@ avaScript 语言正打算在更大的环境中使用，如浏览器,服务端脚
 
 尽管JavaScript刚开始的设计初衷是作为给非程序人员的脚本语言，但其本质是一门编程语言。[\[15\]](https://yangjh.gitee.io/front-end/References.html#cite-15)
 
-## JavaScript简介 {#javascript简介}
+## JavaScript简介 <a id="javascript&#x7B80;&#x4ECB;"></a>
 
-### JavaScript的特点 {#javascript的特点}
+### JavaScript的特点 <a id="javascript&#x7684;&#x7279;&#x70B9;"></a>
 
 JavaScript是一门可以运行在浏览器端的脚本语言。它与浏览器的结合使它成为世界上最为流行的编程语言之一，但它不是所谓的主流编程语言，在对这门语言没有太多了解，甚至对编程都没有什么了解的情况下，用户也能用它解决工作中的一些问题。
 
@@ -20,7 +20,7 @@ JavaScript是一种容易学习和掌握的编程语言。与其他编程语言�
 
 Javascript是一种跨平台的脚本语言。JavaScript的运行依赖于浏览器本身，与操作环境无关，只要能运行浏览器的计算机，并支持javascript的浏览器就可正确执行。
 
-### JavaScript的用途 {#javascript的用途}
+### JavaScript的用途 <a id="javascript&#x7684;&#x7528;&#x9014;"></a>
 
 JavaScript可以完成以下任务：
 
@@ -40,18 +40,21 @@ JavaScript可以完成以下任务：
 4. JavaScript不能操纵不是由它打开的窗口，这是为了避免一个站点关闭其他任何站点的窗口，从而独占浏览器，强制用户接受信息。
 5. JavaScript调整浏览器窗口的大小和位置时，不能将窗口设置的很小或者移出屏幕之外。
 
-## JavaScript开发环境 {#javascript开发环境}
+## JavaScript开发环境 <a id="javascript&#x5F00;&#x53D1;&#x73AF;&#x5883;"></a>
 
 进行JavaScript的开发，需要开发人员具备以下环境：
 
 1. **文本编辑器**
+
    JavaScript脚本是纯文本文件，因此，开发人员可选择自己熟悉的文本编辑器，推荐使用Sublime Text编辑器。
+
 2. **浏览器**
+
    由于JavaScript是网页内容的一部分，要预览脚本的运行效果，自然少不了浏览器，根据项目的不同，开发人员应该选择合适的浏览器，一般而言，至少需要IE、Firefox浏览器。
 
-## Javascript 语言的发展趋势 {#javascript-语言的发展趋势}
+## Javascript 语言的发展趋势 <a id="javascript-&#x8BED;&#x8A00;&#x7684;&#x53D1;&#x5C55;&#x8D8B;&#x52BF;"></a>
 
-### 严格模式 {#严格模式}
+### 严格模式 <a id="&#x4E25;&#x683C;&#x6A21;&#x5F0F;"></a>
 
 JavaScript 语言的设计目的，已经不再局限于浏览器脚本领域，而是向全栈开发前进，因此该语言在未来的前景可谓灿烂，为摆脱早期的设计缺陷， JavaScript 语言推出“严格模式”特性。
 
@@ -61,9 +64,9 @@ JavaScript 语言的设计目的，已经不再局限于浏览器脚本领域，
 
 Mozilla官方建议，最好还是按一个个函数去开启严格模式（至少在学习的过渡期要这样做），您可以将整个脚本的内容用一个函数包括起来，然后在这个函数中使用严格模式。
 
-### ES6 {#es6}
+### ES6 <a id="es6"></a>
 
-## JavaScript学习资源 {#javascript学习资源}
+## JavaScript学习资源 <a id="javascript&#x5B66;&#x4E60;&#x8D44;&#x6E90;"></a>
 
 尽管网络上有丰富的学习资源，但其良莠不齐，因此学习者应该有权威准确、更新及时的参考手册，推荐以下学习资源：
 
@@ -76,6 +79,4 @@ Mozilla官方建议，最好还是按一个个函数去开启严格模式（至�
 7. 《JavaScript设计模式》
 8. 《JavaScript权威指南》
 9. [JavaScript知识在线测试](https://www.nowcoder.com/intelligentTest)
-
-
 

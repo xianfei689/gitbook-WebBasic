@@ -1,6 +1,6 @@
-# 文档元数据相关元素 {#文档元数据相关元素}
+# 3、文档元数据相关元素
 
-## head {#head}
+## head <a id="head"></a>
 
 `head`元素是`html`元素的第一个子元素，用来标记`HTML`文档的一系列元数据（如文档标题、作者、关键词、相关样式表、相关脚本等等）。
 
@@ -14,11 +14,11 @@
  ...
 ```
 
-## title {#title}
+## title <a id="title"></a>
 
 `title`元素位于`head`元素之中，用来标记整个HTML文档的标题或名称，`title`元素不得重复出现。
 
-## base {#base}
+## base <a id="base"></a>
 
 `base`元素位于`head`元素之中，通过`href`属性设定文档基准URL、通过`target`属性设定文档中所有超级链接的默认打开方式。 如：
 
@@ -37,7 +37,7 @@
 
 上例中`base`元素`href`的值必须为绝对地址。p元素中的超级链接最终实际地址为：
 
-```
+```text
  "http://www.example.com/news/archives.html"
 ```
 
@@ -60,19 +60,19 @@
 
 上例中的第一个超级链接将在新建窗口打开，第二个超级链接将在自身窗口打开。
 
-## link {#link}
+## link <a id="link"></a>
 
 `link`元素位于`head`元素中，用来连接和当前文档相关的外部资源。`link`元素必须指定`rel`属性。如：
 
-```
+```text
 <link rel="stylesheet" href="main.css" type="text/css">
 ```
 
-## meta {#meta}
+## meta <a id="meta"></a>
 
 `meta`元素用来标记不能被`title、base、link、style和script`元素标记的其他各种元数据，如网页关键词、版权信息、页面编码信息等等，最常见的是通过`meta`元素设定页面的编码信息：
 
-```
+```text
 <meta charset="UTF-8">
 ```
 
@@ -104,7 +104,7 @@
 </html>
 ```
 
-## style {#style}
+## style <a id="style"></a>
 
 `style`元素是`head`元素的子元素，用来设定HTML文档的内部样式表。
 
@@ -124,6 +124,4 @@
  </body>
 </html>
 ```
-
-
 

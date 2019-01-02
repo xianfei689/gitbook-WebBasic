@@ -1,6 +1,6 @@
-# 嵌入内容元素 {#嵌入内容元素}
+# 8、嵌入内容元素
 
-## picture {#picture}
+## picture <a id="picture"></a>
 
 Picture 元素内容包含图片元素，使用source上提供多个来源，以便网页处理设备根据屏幕像素密度、视口大小、图片格式等其他因素选择合适的图片，以便显示。
 
@@ -12,23 +12,23 @@ Picture 元素内容包含图片元素，使用source上提供多个来源，以
 </picture>
 ```
 
-## img {#img}
+## img <a id="img"></a>
 
 Img 元素用来在文档中插入图片。src属性用来指定图片来源，alt属性用来说明图片内容。
 
-## iframe {#iframe}
+## iframe <a id="iframe"></a>
 
 Iframe 元素生成内嵌框架，引用另外一个网页的内容。src属性用来指定内嵌网页的地址。
 
-```
+```text
 <iframe src="http://ads.example.com/" width="468" height="60"></iframe>
 ```
 
-## embed {#embed}
+## embed <a id="embed"></a>
 
 Embed 元素用来嵌入外部非HTML文档内容，比如flash。
 
-### 嵌入flash {#嵌入flash}
+### 嵌入flash <a id="&#x5D4C;&#x5165;flash"></a>
 
 尽管flash内容在移动平台日渐式微，但由于已经创作了大量的flash内容，因此，我们也需要掌握在页面中嵌入flash的方法。可通过embed元素嵌入flash，如下：
 
@@ -39,7 +39,7 @@ Embed 元素用来嵌入外部非HTML文档内容，比如flash。
 
 embed元素的src属性用来指定flash所在位置，type属性用来声明嵌入的内容为flash，witdh为宽度，height为高度。
 
-## 嵌入视频平台的内容 {#嵌入视频平台的内容}
+## 嵌入视频平台的内容 <a id="&#x5D4C;&#x5165;&#x89C6;&#x9891;&#x5E73;&#x53F0;&#x7684;&#x5185;&#x5BB9;"></a>
 
 在国内外，有许多视频网站提供免费视频存储及在线播放服务，如优酷、youtube等等，这些网站几乎都提供将其内容嵌入到其它页面的办法，以优酷为例，嵌入其内容的办法如下：
 
@@ -59,11 +59,11 @@ embed元素的src属性用来指定flash所在位置，type属性用来声明嵌
 
 究其本质，还是在页面中嵌入flash。
 
-## object {#object}
+## object <a id="object"></a>
 
 Object 元素用来嵌入外部对象，插入的对象视为图片元素。
 
-## video {#video}
+## video <a id="video"></a>
 
 Video 元素用来插入视频文件。通过src, preload, autoplay, mediagroup, loop, muted, 以及 controls 属性控制视频内容及播放方式。
 
@@ -84,7 +84,7 @@ Video 元素用来插入视频文件。通过src, preload, autoplay, mediagroup,
 </video>
 ```
 
-## audio {#audio}
+## audio <a id="audio"></a>
 
 Audio 元素用来插入音频文件。音频文件的播放控制通过属性src, preload, autoplay, mediagroup, loop, muted, 以及 controls 进行设置。
 
@@ -98,17 +98,24 @@ Audio 元素用来插入音频文件。音频文件的播放控制通过属性sr
 
 Ogg全称是OGG Vorbis， 是一种音频压缩格式，类似于MP3等的音乐格式。但有一点不同的是，它是完全免费、开放和没有专利限制的。MP3格式是受专利保护的，如果你想使用MP3格式发布自己的作品，则需要付给Fraunhofer（发明MP3的公司）专利使用费。
 
-### 设置音频播放属性 {#设置音频播放属性}
+### 设置音频播放属性 <a id="&#x8BBE;&#x7F6E;&#x97F3;&#x9891;&#x64AD;&#x653E;&#x5C5E;&#x6027;"></a>
 
 audio元素除了具有src属性外，还有其他几个非常实用的属性，包括：
 
 1. **autoplay**
+
    自动播放当前文件
+
 2. **controls**
+
    显示音频播放器
+
 3. **loop**
+
    循环播放
+
 4. **preload**
+
    预载入音频文件，有三个值：none、auto、metadata，分别表示没有预载入的值、载入所有音频信息值和指定的音频信息值（如作者、时长等等）。
 
 除preload之外，autoplay、 controls 和 loop 都是布尔属性，他们可以不设置值，当它们出现在属性声明中时，它们的值默认为true。
@@ -119,7 +126,7 @@ audio元素在默认情况下，并不会显示在页面中。如果autoplay属�
 <audio src="Backroad.ogg" controls></audio>
 ```
 
-### 指定多种音频格式 {#指定多种音频格式}
+### 指定多种音频格式 <a id="&#x6307;&#x5B9A;&#x591A;&#x79CD;&#x97F3;&#x9891;&#x683C;&#x5F0F;"></a>
 
 不同浏览器对音频格式的支持是不一致的，绝大多数浏览器都支持常见的音频格式，如.mp3、.wav以及.ogg。HTML5中可以使用source元素，指定多种格式，浏览器会依次判断并读取其支持的格式，例如：
 
@@ -133,7 +140,7 @@ audio元素在默认情况下，并不会显示在页面中。如果autoplay属�
 
 苹果公司的Safari浏览器不支持ogg格式，但支持MP3格式，因此，我们为同一个音频提供ogg和mp3格式，基本上就能确保大多数情况下音频文件的播放。
 
-## source {#source}
+## source <a id="source"></a>
 
 Source 元素的src属性指定媒体文件的来源。
 
@@ -145,7 +152,7 @@ Source 元素的src属性指定媒体文件的来源。
 </video>
 ```
 
-## track {#track}
+## track <a id="track"></a>
 
 Track 元素为媒体文件提供基于时间线的文本信息，如不同语言的字幕。
 
@@ -158,7 +165,7 @@ Track 元素为媒体文件提供基于时间线的文本信息，如不同语�
 </video>
 ```
 
-## map {#map}
+## map <a id="map"></a>
 
 Map 元素将图片和区域组合起来形成地图。
 
@@ -177,15 +184,15 @@ Map 元素将图片和区域组合起来形成地图。
 </MAP>
 ```
 
-## area {#area}
+## area <a id="area"></a>
 
 Area 元素为图片的指定区域添加超级链接。
 
-## math {#math}
+## math <a id="math"></a>
 
 Math 元素用来在HTML文档中插入数学公式。
 
-## svg {#svg}
+## svg <a id="svg"></a>
 
 Svg 元素用来嵌入svg格式图片。
 
