@@ -38,4 +38,5 @@
     * [5.3、JavaScrip 数组](javascript/5javascript-bian-liang-lei-xing/5.3javascrip-shu-zu.md)
     * [5.2、JavaScript 函数](javascript/5javascript-bian-liang-lei-xing/5.2javascript-han-shu.md)
     * [5.1、JavaScript 对象](javascript/5javascript-bian-liang-lei-xing/5.1javascript-dui-xiang.md)
+  * [6、JavaScript内置对象](javascript/6javascript-nei-zhi-dui-xiang.md)
 
