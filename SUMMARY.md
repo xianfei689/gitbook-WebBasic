@@ -34,5 +34,6 @@
   * [2、核心语法](javascript/23001-he-xin-yu-fa.md)
   * [3、运算符](javascript/33001-yun-suan-fu.md)
   * [4、JavaScript语句和声明](javascript/4javascript-yu-ju-he-sheng-ming.md)
-  * [5、JavaScript变量类型](javascript/5javascript-bian-liang-lei-xing.md)
+  * [5、JavaScript变量类型](javascript/5javascript-bian-liang-lei-xing/README.md)
+    * [5.1、JavaScript 对象](javascript/5javascript-bian-liang-lei-xing/5.1javascript-dui-xiang.md)
 
