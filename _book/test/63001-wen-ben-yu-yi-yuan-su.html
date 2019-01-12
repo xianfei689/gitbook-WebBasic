@@ -1,0 +1,940 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6、文本语义元素 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="73001-bian-ji-xiang-guan-yuan-su.html" />
+    
+    
+    <link rel="prev" href="53001-nei-rong-zu-zhi-yuan-su.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Web 标准
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="htmlji-chu-gai-nian-ji-gui-ze.html">
+            
+                <a href="htmlji-chu-gai-nian-ji-gui-ze.html">
+            
+                    
+                    1、HTML基础概念及规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="23001-wen-dang-gen-yuan-su.html">
+            
+                <a href="23001-wen-dang-gen-yuan-su.html">
+            
+                    
+                    2、文档根元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="33001-wen-dang-yuan-shu-ju-xiang-guan-yuan-su.html">
+            
+                <a href="33001-wen-dang-yuan-shu-ju-xiang-guan-yuan-su.html">
+            
+                    
+                    3、文档元数据相关元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="43001-qu-kuai-yuan-su.html">
+            
+                <a href="43001-qu-kuai-yuan-su.html">
+            
+                    
+                    4、区块元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="53001-nei-rong-zu-zhi-yuan-su.html">
+            
+                <a href="53001-nei-rong-zu-zhi-yuan-su.html">
+            
+                    
+                    5、内容组织元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="63001-wen-ben-yu-yi-yuan-su.html">
+            
+                <a href="63001-wen-ben-yu-yi-yuan-su.html">
+            
+                    
+                    6、文本语义元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="73001-bian-ji-xiang-guan-yuan-su.html">
+            
+                <a href="73001-bian-ji-xiang-guan-yuan-su.html">
+            
+                    
+                    7、编辑相关元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="83001-qian-ru-nei-rong-yuan-su.html">
+            
+                <a href="83001-qian-ru-nei-rong-yuan-su.html">
+            
+                    
+                    8、嵌入内容元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="93001-biao-ge-yuan-su.html">
+            
+                <a href="93001-biao-ge-yuan-su.html">
+            
+                    
+                    9、表格元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="103001-biao-dan-yuan-su.html">
+            
+                <a href="103001-biao-dan-yuan-su.html">
+            
+                    
+                    10、表单元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="113001-jiao-ben-yuan-su.html">
+            
+                <a href="113001-jiao-ben-yuan-su.html">
+            
+                    
+                    11、脚本元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../xhtml/">
+            
+                <a href="../xhtml/">
+            
+                    
+                    XHTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../xhtml/aa.html">
+            
+                <a href="../xhtml/aa.html">
+            
+                    
+                    XHTML DTD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../css/13001-shi-yong-yang-shi-biao-de-san-zhong-fang-shi.html">
+            
+                <a href="../css/13001-shi-yong-yang-shi-biao-de-san-zhong-fang-shi.html">
+            
+                    
+                    1、使用样式表的三种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../css/2cssyu-fa-yu-gui-ze.html">
+            
+                <a href="../css/2cssyu-fa-yu-gui-ze.html">
+            
+                    
+                    2、CSS语法与规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../css/3css-xuan-ze-fu.html">
+            
+                <a href="../css/3css-xuan-ze-fu.html">
+            
+                    
+                    3、CSS 选择符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../css/43001-yang-shi-ji-lian.html">
+            
+                <a href="../css/43001-yang-shi-ji-lian.html">
+            
+                    
+                    4、样式级联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../css/5csszhong-de-du-liang-dan-wei.html">
+            
+                <a href="../css/5csszhong-de-du-liang-dan-wei.html">
+            
+                    
+                    5、CSS中的度量单位
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../css/63001-wen-ben-yang-shi.html">
+            
+                <a href="../css/63001-wen-ben-yang-shi.html">
+            
+                    
+                    6、文本样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../css/7cssbei-jing-shu-xing.html">
+            
+                <a href="../css/7cssbei-jing-shu-xing.html">
+            
+                    
+                    7、CSS背景属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../css/8csshe-mo-xing.html">
+            
+                <a href="../css/8csshe-mo-xing.html">
+            
+                    
+                    8、CSS盒模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../css/93001-ding-wei-ji-bu-ju.html">
+            
+                <a href="../css/93001-ding-wei-ji-bu-ju.html">
+            
+                    
+                    9、定位及布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../css/10reset-css.html">
+            
+                <a href="../css/10reset-css.html">
+            
+                    
+                    10、reset css
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../css/11cssbian-xing.html">
+            
+                <a href="../css/11cssbian-xing.html">
+            
+                    
+                    11、CSS变形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../css/12cssguo-du-ji-dong-hua.html">
+            
+                <a href="../css/12cssguo-du-ji-dong-hua.html">
+            
+                    
+                    12、CSS过渡及动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../css/13flex-bu-ju.html">
+            
+                <a href="../css/13flex-bu-ju.html">
+            
+                    
+                    13、Flex 布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../javascript/">
+            
+                <a href="../javascript/">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../javascript/1jsshi-yong.html">
+            
+                <a href="../javascript/1jsshi-yong.html">
+            
+                    
+                    1、js使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../javascript/23001-he-xin-yu-fa.html">
+            
+                <a href="../javascript/23001-he-xin-yu-fa.html">
+            
+                    
+                    2、核心语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../javascript/33001-yun-suan-fu.html">
+            
+                <a href="../javascript/33001-yun-suan-fu.html">
+            
+                    
+                    3、运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../javascript/4javascript-yu-ju-he-sheng-ming.html">
+            
+                <a href="../javascript/4javascript-yu-ju-he-sheng-ming.html">
+            
+                    
+                    4、JavaScript语句和声明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../javascript/5javascript-bian-liang-lei-xing/">
+            
+                <a href="../javascript/5javascript-bian-liang-lei-xing/">
+            
+                    
+                    5、JavaScript变量类型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../javascript/5javascript-bian-liang-lei-xing/5.1javascript-dui-xiang.html">
+            
+                <a href="../javascript/5javascript-bian-liang-lei-xing/5.1javascript-dui-xiang.html">
+            
+                    
+                    5.1、JavaScript 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../javascript/5javascript-bian-liang-lei-xing/5.2javascript-han-shu.html">
+            
+                <a href="../javascript/5javascript-bian-liang-lei-xing/5.2javascript-han-shu.html">
+            
+                    
+                    5.2、JavaScript 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.3" data-path="../javascript/5javascript-bian-liang-lei-xing/5.3javascrip-shu-zu.html">
+            
+                <a href="../javascript/5javascript-bian-liang-lei-xing/5.3javascrip-shu-zu.html">
+            
+                    
+                    5.3、JavaScrip 数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../javascript/7javascript-shi-jian.html">
+            
+                <a href="../javascript/7javascript-shi-jian.html">
+            
+                    
+                    7、JavaScript 事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../javascript/6javascript-nei-zhi-dui-xiang/">
+            
+                <a href="../javascript/6javascript-nei-zhi-dui-xiang/">
+            
+                    
+                    6、JavaScript内置对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="../javascript/6javascript-nei-zhi-dui-xiang/6.1-dom.html">
+            
+                <a href="../javascript/6javascript-nei-zhi-dui-xiang/6.1-dom.html">
+            
+                    
+                    6.1、DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="../javascript/6javascript-nei-zhi-dui-xiang/6.2-bom.html">
+            
+                <a href="../javascript/6javascript-nei-zhi-dui-xiang/6.2-bom.html">
+            
+                    
+                    6.2、BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.3" data-path="../javascript/6javascript-nei-zhi-dui-xiang/6.3-json.html">
+            
+                <a href="../javascript/6javascript-nei-zhi-dui-xiang/6.3-json.html">
+            
+                    
+                    6.3、JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6、文本语义元素</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="6&#x3001;&#x6587;&#x672C;&#x8BED;&#x4E49;&#x5143;&#x7D20;">6&#x3001;&#x6587;&#x672C;&#x8BED;&#x4E49;&#x5143;&#x7D20;</h1>
+<h2 id="a-">a <a id="a"></a></h2>
+<p>A &#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x8D85;&#x94FE;&#x63A5;&#x6216;&#x8005;&#x6587;&#x6863;&#x5185;&#x90E8;&#x951A;&#x70B9;&#x3002;&#x5982;&#x679C;a&#x5143;&#x7D20;&#x6709;href&#x5C5E;&#x6027;&#xFF0C;&#x5B83;&#x5C31;&#x8868;&#x793A;&#x8D85;&#x94FE;&#x63A5;&#x3002;</p>
+<p>&#x5F53;a &#x5143;&#x7D20;&#x8868;&#x793A;&#x8D85;&#x94FE;&#x63A5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;target&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x6253;&#x5F00;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-php">&lt;a href=<span class="hljs-string">&quot;http://www.baidu.com&quot;</span> target=<span class="hljs-string">&quot;_blank&quot;</span>&gt;&#x767E;&#x5EA6;&lt;/a&gt;
+</code></pre>
+<p>&#x4E4B;&#x524D;&#x5728;\ref{sub:&#x5757;&#x5143;&#x7D20;&#x4E0E;&#x884C;&#x5185;&#x5143;&#x7D20;}&#x6211;&#x4EEC;&#x63D0;&#x5230;&#xFF0C;&#x884C;&#x5185;&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x5757;&#x5143;&#x7D20;&#xFF0C;&#x4F46;&#x662F;a&#x5143;&#x7D20;&#x662F;&#x4E2A;&#x4F8B;&#x5916;&#xFF0C;a&#x5143;&#x7D20;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x662F;&#x6587;&#x5B57;&#x3001;&#x56FE;&#x7247;&#x7B49;&#x884C;&#x5185;&#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x6BB5;&#x843D;&#x3001;&#x6807;&#x9898;&#x7B49;&#x5757;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x94FE;&#x63A5;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF1A;&#x6307;&#x5411;&#x672C;&#x7AD9;&#x5185;&#x90E8;&#x7684;&#x94FE;&#x63A5;&#x548C;&#x6307;&#x5411;&#x5916;&#x90E8;&#x7AD9;&#x70B9;&#x7684;&#x94FE;&#x63A5;&#x3002;&#x8FD9;&#x4E9B;&#x94FE;&#x63A5;&#x901A;&#x8FC7;a&#x5143;&#x7D20;&#x7684;href&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x3002;&#x6211;&#x4EEC;&#x5E38;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x6765;&#x6307;&#x5B9A;&#x7F51;&#x7AD9;&#x5185;&#x90E8;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x4E2D;&#x4E0D;&#x5305;&#x542B;&#x57DF;&#x540D;&#xFF08;&#x5982;.com&#xFF0C;.org&#xFF0C; .edu&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x4E3A;&#x94FE;&#x63A5;&#x6307;&#x5411;&#x7684;&#x7F51;&#x9875;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x7AD9;&#x70B9;&#xFF0C;&#x56E0;&#x6B64;href&#x5C5E;&#x6027;&#x7684;&#x503C;&#x53EA;&#x9700;&#x8981;&#x5305;&#x542B;&#x7F51;&#x9875;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x5373;&#x53EF;&#xFF0C;&#x5982;:<code>&lt;ahref=&quot;about.html&quot;&gt;About&lt;/a&gt;</code>&#xFF1B;&#x6307;&#x5411;&#x5916;&#x90E8;&#x7AD9;&#x70B9;&#x9875;&#x9762;&#x7684;&#x94FE;&#x63A5;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;URL&#x4FE1;&#x606F;&#x3002;&#x901A;&#x5E38;&#x662F;&#x4EE5;http&#x5F00;&#x5934;&#xFF0C;&#x5305;&#x542B;&#x4E3B;&#x673A;&#x57DF;&#x540D;&#x4EE5;&#x53CA;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x548C;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x3002;&#x5982;<code>&lt;ahref=&quot;http://www.google.com/&quot;&gt;Google&lt;/a&gt;</code></p>
+<p>a&#x5143;&#x7D20;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;href&#x5C5E;&#x6027;&#x4E2D;&#x6DFB;&#x52A0;<code>#</code>&#x521B;&#x5EFA;&#x6307;&#x5411;&#x6587;&#x6863;&#x5185;&#x90E8;&#x5177;&#x4F53;&#x4F4D;&#x7F6E;&#x7684;&#x8D85;&#x7EA7;&#x94FE;&#x63A5;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-php">&lt;body id=<span class="hljs-string">&quot;top&quot;</span>&gt;
+  ...
+  &lt;a href=<span class="hljs-string">&quot;#top&quot;</span>&gt;Back to top&lt;/a&gt;
+  ...
+&lt;/body&gt;
+</code></pre>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8FD4;&#x56DE;&#x5230;body&#x5F00;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x8D85;&#x7EA7;&#x94FE;&#x63A5;&#xFF0C;&#x5B9E;&#x73B0;&#x8FD4;&#x56DE;&#x5230;&#x9875;&#x9996;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<h2 id="em-">em <a id="em"></a></h2>
+<p>Em &#x5143;&#x7D20;&#x8868;&#x793A;&#x5BF9;&#x5176;&#x6807;&#x8BB0;&#x5185;&#x5BB9;&#x7684;&#x5F3A;&#x8C03;&#xFF0C;&#x5728;&#x8BED;&#x4E49;&#x4E0A;&#x5F3A;&#x8C03;&#x4E0E;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x7684;&#x4E0D;&#x540C;&#x3002;</p>
+<h2 id="strong-">strong <a id="strong"></a></h2>
+<p>Strong&#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x5176;&#x6807;&#x8BB0;&#x5185;&#x5BB9;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3001;&#x975E;&#x5E38;&#x7D27;&#x6025;&#xFF0C;&#x5728;&#x8BED;&#x4E49;&#x4E0A;&#x8868;&#x793A;&#x91CD;&#x8981;&#x6027;&#x3002;</p>
+<h2 id="small-">small <a id="small"></a></h2>
+<p>Small &#x5143;&#x7D20;&#x8868;&#x793A;&#x8BF8;&#x5982;&#x6CE8;&#x91CA;&#x3001;&#x8BF4;&#x660E;&#x7B49;&#x7B49;&#x4E0D;&#x540C;&#x4E8E;&#x6B63;&#x6587;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-php">&lt;dl&gt;
+&lt;dt&gt;&#x6807;&#x51C6;&#x95F4;&lt;/dt&gt;
+&lt;dd&gt;<span class="hljs-number">199</span>&#x5143;&#x3002;&lt;small&gt;&#x4E0D;&#x542B;&#x65E9;&#x9910;&lt;/small&gt;&lt;/dd&gt;
+&lt;dd&gt;<span class="hljs-number">229</span>&#x5143;&#x3002;&lt;small&gt;&#x542B;&#x53CC;&#x65E9;&lt;/small&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<h2 id="s-">s <a id="s"></a></h2>
+<p>S &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x4E0D;&#x518D;&#x51C6;&#x786E;&#x6216;&#x8005;&#x5DF2;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code class="lang-php">&lt;dl&gt;
+&lt;dt&gt;&#x6807;&#x51C6;&#x95F4;&lt;/dt&gt;
+&lt;dd&gt;&lt;s&gt;<span class="hljs-number">199</span>&#x5143;&#x3002;&lt;small&gt;&#x4E0D;&#x542B;&#x65E9;&#x9910;&lt;/small&gt;&lt;/s&gt;&lt;/dd&gt;
+&lt;dd&gt;<span class="hljs-number">189</span>&#x5143;&#x3002;&lt;small&gt;&#x542B;&#x65E9;&#x9910;&lt;/small&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+<h2 id="cite-">cite <a id="cite"></a></h2>
+<p>Cite&#x7528;&#x6765;&#x8868;&#x793A;&#x5BF9;&#x4F5C;&#x54C1;&#xFF08;&#x5982;&#x4E66;&#x7C4D;&#x3001;&#x7535;&#x5F71;&#x3001;&#x6B4C;&#x66F2;&#x3001;&#x65B0;&#x95FB;&#x7B49;&#x7B49;&#xFF09;&#x7684;&#x5F15;&#x7528;&#xFF0C;cite&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x4F5C;&#x54C1;&#x540D;&#x79F0;&#x6216;&#x8005;&#x4F5C;&#x8005;&#x540D;&#x79F0;&#x6216;&#x8005;URL&#x5730;&#x5740;&#x3002;</p>
+<pre><code class="lang-php">&lt;cite&gt;
+    &lt;a href=<span class="hljs-string">&quot;http://world.people.com.cn/n1/2016/0106/c1002-28019941.html&quot;</span>&gt;&#x805A;&#x7126;&#x671D;&#x9C9C;&#x7684;&#x5386;&#x6B21;&#x6838;&#x8BD5;&#x9A8C;&lt;/a&gt;. &#x4EBA;&#x6C11;&#x7F51;. 
+&lt;/cite&gt;
+</code></pre>
+<h2 id="q-">q <a id="q"></a></h2>
+<p>Q &#x5143;&#x7D20;&#x8868;&#x793A;&#x5BF9;&#x5916;&#x90E8;&#x8D44;&#x6599;&#x7684;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x3002;</p>
+<pre><code class="lang-php">&lt;p&gt;&#x90A3;&#x4E2A;&#x7537;&#x4EBA;&#x8BF4;&lt;q&gt;&#x4E8B;&#x60C5;&#x4E0D;&#x80FD;&#x518D;&#x62D6;&#x4E86;&lt;/q&gt;&#x3002;&#x6211;&#x4E5F;&#x8D5E;&#x540C;&#x4ED6;&#x7684;&#x89C2;&#x70B9;&#x3002;&lt;/p&gt;
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;cite&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x5916;&#x90E8;&#x8D44;&#x6599;&#x7684;&#x6765;&#x6E90;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-php">&lt;p&gt;
+    &#x4E07;&#x7EF4;&#x7F51;&#x8054;&#x76DF;&#x5728;&#x5176; &lt;cite&gt;About W3C&lt;/cite&gt; &#x9875;&#x9762;&#x4E2D;&#x8868;&#x660E;&#xFF0C;&#x5B83;&#x7684;&#x4F7F;&#x547D;&#x662F; 
+    &lt;q cite=<span class="hljs-string">&quot;http://www.w3.org/Consortium/&quot;</span>&gt;&#x901A;&#x8FC7;&#x5236;&#x5B9A;&#x534F;&#x8BAE;&#x548C;&#x89C4;&#x8303;&#xFF0C;&#x5F15;&#x5BFC;&#x4E07;&#x7EF4;&#x7F51;&#x53D1;&#x6325;&#x5176;&#x5168;&#x90E8;&#x6F5C;&#x529B;&#xFF0C;&#x786E;&#x4FDD;&#x4E07;&#x7EF4;&#x7F51;&#x7684;&#x957F;&#x671F;&#x53D1;&#x5C55;&#x3002;&lt;/q&gt;. 
+&lt;/p&gt;
+</code></pre>
+<h2 id="dfn-">dfn <a id="dfn"></a></h2>
+<p>dfn&#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x672F;&#x8BED;&#x7684;&#x5B9A;&#x4E49;&#x3002;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-text">&lt;
+p
+&gt;
+doit.im&#x662F;&#x4E00;&#x6B3E;
+&lt;
+dfn
+&gt;
+&lt;
+abbr
+title
+=
+&quot;
+Get Thing Done
+&quot;
+&gt;
+GTD
+&lt;
+/
+abbr
+&gt;
+&lt;
+/
+dfn
+&gt;
+&#x8F6F;&#x4EF6;&#xFF0C;&#x7528;&#x6765;&#x5E2E;&#x52A9;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x3002;
+&lt;
+/
+p
+&gt;
+</code></pre>
+<h2 id="abbr-">abbr <a id="abbr"></a></h2>
+<p>Abbr &#x5143;&#x7D20;&#x8868;&#x793A;&#x67D0;&#x4E2A;&#x672F;&#x8BED;&#x7684;&#x7F29;&#x5199;&#x3002;&#x4F7F;&#x7528;title&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#x672F;&#x8BED;&#x7684;&#x5168;&#x90E8;&#x540D;&#x79F0;&#x3002;</p>
+<h2 id="data-">data <a id="data"></a></h2>
+<p>Data &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x6570;&#x636E;&#x3002;</p>
+<h2 id="time-">time <a id="time"></a></h2>
+<p>Time &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x65F6;&#x95F4;&#x3002;</p>
+<h2 id="code-">code <a id="code"></a></h2>
+<p>Code &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x4EE3;&#x7801;&#x3002;</p>
+<h2 id="var-">var <a id="var"></a></h2>
+<p>Var &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x53D8;&#x91CF;&#x3002;</p>
+<h2 id="samp-">samp <a id="samp"></a></h2>
+<p>Samp &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x7A0B;&#x5E8F;&#x6216;&#x8005;&#x8BA1;&#x7B97;&#x673A;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x3002;</p>
+<h2 id="kbd-">kbd <a id="kbd"></a></h2>
+<p>Kbd &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x952E;&#x76D8;&#x8F93;&#x5165;&#x3002;</p>
+<pre><code class="lang-text">&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x952E;
+&lt;
+kbd
+&gt;
+Ctrl + S 
+&lt;
+/
+kdb
+&gt;
+&#x4FDD;&#x5B58;&#x6587;&#x6863;&#x3002;
+</code></pre>
+<h2 id="sub&#x548C;sup-">sub&#x548C;sup <a id="sub&#x548C;sup"></a></h2>
+<p>Sub &#x8868;&#x793A;&#x4E0B;&#x6807;&#xFF0C;sup&#x8868;&#x793A;&#x4E0A;&#x6807;&#x3002;</p>
+<h2 id="i-">i <a id="i"></a></h2>
+<p>I &#x5143;&#x7D20;&#x8868;&#x793A;&#x4E0D;&#x540C;&#x4E8E;&#x6B63;&#x6587;&#x7684;&#x53EF;&#x66FF;&#x6362;&#x58F0;&#x97F3;&#x3001;&#x60C5;&#x7EEA;&#x6216;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x5185;&#x5BB9;&#x7B49;&#x7B49;&#x3002;</p>
+<h2 id="b-">b <a id="b"></a></h2>
+<p>B &#x5143;&#x7D20;&#x7528;&#x6765;&#x8868;&#x793A;&#x8BF8;&#x5982;&#x5173;&#x952E;&#x5B57;&#x3001;&#x4EA7;&#x54C1;&#x540D;&#x79F0;&#x7B49;&#x7B49;&#x9700;&#x8981;&#x5F15;&#x8D77;&#x6CE8;&#x610F;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="u-">u <a id="u"></a></h2>
+<p>U &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x4E0D;&#x80FD;&#x975E;&#x5E38;&#x6E05;&#x695A;&#x8868;&#x8FBE;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x6C49;&#x8BED;&#x8BD7;&#x6B4C;&#x7B49;&#x3002;</p>
+<h2 id="mark-">mark <a id="mark"></a></h2>
+<p>Mark &#x5143;&#x7D20;&#x7528;&#x6765;&#x6807;&#x8BB0;&#x9AD8;&#x4EAE;&#x5185;&#x5BB9;&#xFF0C;&#x4EE5;&#x8868;&#x793A;&#x5176;&#x4E0E;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x7684;&#x533A;&#x522B;&#x3002;</p>
+<h2 id="ruby-">ruby <a id="ruby"></a></h2>
+<p>Ruby &#x5143;&#x7D20;&#x7528;&#x6765;&#x4E3A;&#x4E1C;&#x4E9A;&#x5B57;&#x7B26;&#x6DFB;&#x52A0;&#x6CE8;&#x97F3;&#x3002;</p>
+<h2 id="span-">span <a id="span"></a></h2>
+<p>Span &#x5143;&#x7D20;&#x7528;&#x6765;&#x5728;&#x903B;&#x8F91;&#x7ED3;&#x6784;&#x4E0A;&#x5BF9;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x533A;&#x5206;&#xFF0C;&#x6BD4;&#x5982;&#x5728;&#x65B0;&#x95FB;&#x4FE1;&#x606F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x65E5;&#x671F;&#x3001;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x3001;&#x6D88;&#x606F;&#x6765;&#x6E90;&#x7B49;&#x5185;&#x5BB9;&#xFF0C;&#x7528;span&#x5143;&#x7D20;&#x52A0;&#x4EE5;&#x6807;&#x8BB0;&#xFF0C;&#x7ED3;&#x5408;class&#x5C5E;&#x6027;&#xFF0C;&#x8FDB;&#x884C;&#x6587;&#x672C;&#x533A;&#x5206;&#x3002;</p>
+<h2 id="br-">br <a id="br"></a></h2>
+<p>Br &#x5143;&#x7D20;&#x8868;&#x793A;&#x53E6;&#x8D77;&#x4E00;&#x884C;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="53001-nei-rong-zu-zhi-yuan-su.html" class="navigation navigation-prev " aria-label="Previous page: 5、内容组织元素">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="73001-bian-ji-xiang-guan-yuan-su.html" class="navigation navigation-next " aria-label="Next page: 7、编辑相关元素">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6、文本语义元素","level":"1.2.6","depth":2,"next":{"title":"7、编辑相关元素","level":"1.2.7","depth":2,"path":"test/73001-bian-ji-xiang-guan-yuan-su.md","ref":"test/73001-bian-ji-xiang-guan-yuan-su.md","articles":[]},"previous":{"title":"5、内容组织元素","level":"1.2.5","depth":2,"path":"test/53001-nei-rong-zu-zhi-yuan-su.md","ref":"test/53001-nei-rong-zu-zhi-yuan-su.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"test/63001-wen-ben-yu-yi-yuan-su.md","mtime":"2019-01-05T08:51:21.731Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-12T12:27:15.832Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
